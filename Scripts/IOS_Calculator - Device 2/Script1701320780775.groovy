@@ -39,16 +39,4 @@ Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Angka 2'), 10)
 
 Mobile.tap(findTestObject('Object Repository/iOS - iPhone 6/Total'), 10)
 
-Mobile.tap(findTestObject('Object Repository/iOS - iPhone 6/Tambah'), 10)
-
-Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Angka 9'), 10)
-
-Mobile.tap(findTestObject('Object Repository/iOS - iPhone 6/Total'), 10)
-
-Mobile.tap(findTestObject('Object Repository/iOS - iPhone 6/Bagi'), 10)
-
-Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Angka 5'), 10)
-
-Mobile.tap(findTestObject('Object Repository/iOS - iPhone 6/Total'), 10)
-
 Mobile.delay(5)

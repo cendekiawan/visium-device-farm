@@ -29,25 +29,11 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 CustomKeywords.'visium.SetCapability.iOS'("52faf304d5147795cac1003572fb3b50d74ef5d4","52faf304d5147795cac1003572fb3b50d74ef5d4","15.0.2")
 
-//Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Reset'), 30)
-
 Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Angka 8'), 10)
 
 Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Kali'), 10)
 
 Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Angka 2'), 10)
-
-Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Total'), 10)
-
-Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Tambah'), 10)
-
-Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Angka 9'), 10)
-
-Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Total'), 10)
-
-Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Bagi'), 10)
-
-Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Angka 5'), 10)
 
 Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Total'), 10)
 

@@ -11,3 +11,4 @@ Libs/
 *.apk
 
 .cache/
+/bin/
