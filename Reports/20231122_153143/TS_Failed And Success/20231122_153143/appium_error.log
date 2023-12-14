@@ -1,3 +1,0 @@
-WARN Appium Appium encountered 2 warnings while validating plugins found in manifest /Users/ddl02/.appium/node_modules/.cache/appium/extensions.yaml
-WARN Appium Plugin "device-farm" has 1 potential problem: 
-WARN Appium   - Plugin "device-farm" (package `appium-device-farm`) may be incompatible with the current version of Appium (v2.0.0) due to its peer dependency on older Appium v^2.2.1. Please upgrade `appium-device-farm` to v8.3.16 or newer.

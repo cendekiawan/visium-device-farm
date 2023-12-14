@@ -1,9 +1,0 @@
-Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
-IOS_Visium Demo Test Suite - Device 2,,,,2023-11-30 12:19:32,2023-11-30 12:20:28,55.193s,FAILED
-,,,,,,,
-Test Cases/IOS_Calculator - Device 2,,"- An automation script to help user getting started with Mobile automation testing.
-- Script Content: Click ""START ALARM SERVICE"" and click ""STOP ALARM SERVICE"", verify alert show is correct",,2023-11-30 12:19:33,2023-11-30 12:20:28,54.971s,FAILED
-"visium.SetCapability.iOS(""3b910746a893bfff0ffb98026b47239f0776bcee"", ""3b910746a893bfff0ffb98026b47239f0776bcee"", ""12.3.1"")",,,,2023-11-30 12:19:33,2023-11-30 12:19:48,15.322s,PASSED
-"tap(findTestObject(""Object Repository/iOS/Angka 8""), 10)",,,,2023-11-30 12:19:48,2023-11-30 12:19:54,5.085s,PASSED
-"tap(findTestObject(""Object Repository/iOS/Kali""), 10)",,,,2023-11-30 12:19:54,2023-11-30 12:20:27,33.660s,FAILED
-Start listener action : sampleAfterTestCase,,,,2023-11-30 12:20:27,2023-11-30 12:20:28,0.421s,PASSED

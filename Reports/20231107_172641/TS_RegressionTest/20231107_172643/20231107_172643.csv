@@ -1,9 +1,0 @@
-Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
-TS_RegressionTest,,,,2023-11-07 17:26:58,2023-11-07 17:27:35,37.048s,FAILED
-,,,,,,,
-Test Cases/TC01_Register Success,,"- An automation script to help user getting started with Mobile automation testing.
-- Script Content: Click ""START ALARM SERVICE"" and click ""STOP ALARM SERVICE"", verify alert show is correct",,2023-11-07 17:26:58,2023-11-07 17:27:35,36.579s,FAILED
-"comment(""Register Success"")",,,,2023-11-07 17:26:59,2023-11-07 17:26:59,0.078s,PASSED
-"appPath = relativeToAbsolutePath(G_AndroidApp, getProjectDir())",,Get full directory's path of android application,,2023-11-07 17:26:59,2023-11-07 17:26:59,0.222s,PASSED
-"startApplication(appPath, false)",,,,2023-11-07 17:26:59,2023-11-07 17:27:23,24.449s,PASSED
-"tap(findTestObject(""Object Repository/Demo/Add - Button""), 10)",,,,2023-11-07 17:27:23,2023-11-07 17:27:35,11.467s,FAILED
