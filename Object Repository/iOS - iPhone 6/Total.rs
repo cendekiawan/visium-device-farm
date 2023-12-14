@@ -3,9 +3,33 @@
    <description></description>
    <name>Total</name>
    <tag></tag>
-   <elementGuidId>45c61608-3185-4a0d-ac9d-8465abecf837</elementGuidId>
+   <elementGuidId>76460ad4-fb83-4db6-9108-0df600c914ab</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>eşit</value>
+      <webElementGuid>847bae93-b60a-4083-945e-98d83739ccee</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>label</name>
+      <type>Main</type>
+      <value>eşit</value>
+      <webElementGuid>e09126bb-eaad-4a56-b594-63644babab1f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//XCUIElementTypeButton[@name=&quot;eşit&quot;]</value>
+      <webElementGuid>fc9abb29-ed4d-4582-93a2-abbaa68b8a31</webElementGuid>
+   </webElementProperties>
    <locator>//XCUIElementTypeButton[@name=&quot;eşit&quot;]</locator>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locatorStrategy>ATTRIBUTES</locatorStrategy>
 </MobileElementEntity>

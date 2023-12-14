@@ -3,9 +3,33 @@
    <description></description>
    <name>Total</name>
    <tag></tag>
-   <elementGuidId>b594d05c-13e2-4a9d-9289-c6e5eecddfdf</elementGuidId>
+   <elementGuidId>f9817965-2bd0-4865-83df-fd4a2143f85a</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//XCUIElementTypeButton[@name=&quot;equals&quot;]</locator>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>equals</value>
+      <webElementGuid>9bb6071d-3c3d-4c92-b6d8-90ce2e09e6e2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>label</name>
+      <type>Main</type>
+      <value>equals</value>
+      <webElementGuid>3828b40c-b38a-45d6-ac62-5f685acad8a1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//XCUIElementTypeButton[@name=&quot;equals&quot;]</value>
+      <webElementGuid>4b35c85e-8737-4860-9145-6e305f1587f3</webElementGuid>
+   </webElementProperties>
+   <locator>//*[@name = 'equals']</locator>
+   <locatorStrategy>ATTRIBUTES</locatorStrategy>
 </MobileElementEntity>

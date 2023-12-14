@@ -27,9 +27,7 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-CustomKeywords.'visium.SetCapability.iOS'("3b910746a893bfff0ffb98026b47239f0776bcee","3b910746a893bfff0ffb98026b47239f0776bcee","12.3.1")
-
-//Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Reset'), 30)
+CustomKeywords.'visium.SetCapability.iOS'("9024a28917d38825b135091bcca878aec226a245","9024a28917d38825b135091bcca878aec226a245","12.4.1")
 
 Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Angka 8'), 10)
 

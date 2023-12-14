@@ -3,9 +3,33 @@
    <description></description>
    <name>Kali</name>
    <tag></tag>
-   <elementGuidId>d28b0e30-fdf1-417e-828e-50cc925c128b</elementGuidId>
+   <elementGuidId>933f35a0-d16d-4819-a00b-4ff03a531620</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>çarp</value>
+      <webElementGuid>f32323b6-0768-4362-b95a-716be7871a26</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>label</name>
+      <type>Main</type>
+      <value>çarp</value>
+      <webElementGuid>476658e7-8b8c-465c-9e4c-1124cb6b0c1b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//XCUIElementTypeButton[@name=&quot;çarp&quot;]</value>
+      <webElementGuid>112cb63f-5732-4edf-b24a-be39065fe2a3</webElementGuid>
+   </webElementProperties>
    <locator>//XCUIElementTypeButton[@name=&quot;çarp&quot;]</locator>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locatorStrategy>ATTRIBUTES</locatorStrategy>
 </MobileElementEntity>
