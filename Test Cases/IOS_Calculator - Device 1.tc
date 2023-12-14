@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>- An automation script to help user getting started with Mobile automation testing.
+- Script Content: Click &quot;START ALARM SERVICE&quot; and click &quot;STOP ALARM SERVICE&quot;, verify alert show is correct</description>
+   <name>IOS_Calculator - Device 1</name>
+   <tag></tag>
+   <comment>Story: Verify correct alarm message
+Given that user has started an application
+And he navigates the application to Activity form
+When he taps on the Custom Dialog button
+Then the correct dialog message should be displayed</comment>
+   <testCaseGuid>6bdeca6c-ca10-4c18-a10a-39e03db781bf</testCaseGuid>
+</TestCaseEntity>
