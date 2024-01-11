@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteCollectionEntity>
    <description></description>
-   <name>IOS_Visium Demo Pararel Testing</name>
+   <name>Device Farm - UAT</name>
    <tag></tag>
    <delayBetweenInstances>0</delayBetweenInstances>
    <executionMode>PARALLEL</executionMode>
-   <maxConcurrentInstances>2</maxConcurrentInstances>
+   <maxConcurrentInstances>8</maxConcurrentInstances>
    <testSuiteRunConfigurations>
       <TestSuiteRunConfiguration>
          <configuration>
             <groupName>Web Desktop</groupName>
-            <profileName>default</profileName>
+            <profileName>UAT</profileName>
             <requireConfigurationData>false</requireConfigurationData>
             <runConfigurationData>
                <entry>
@@ -25,12 +25,12 @@
             <runConfigurationId>Remote</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/IOS_Visium Demo Test Suite - Device 1</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Feature Register</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
             <groupName>Web Desktop</groupName>
-            <profileName>default</profileName>
+            <profileName>UAT</profileName>
             <requireConfigurationData>false</requireConfigurationData>
             <runConfigurationData>
                <entry>
@@ -45,7 +45,7 @@
             <runConfigurationId>Remote</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/IOS_Visium Demo Test Suite - Device 2</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Feature Calculator</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>

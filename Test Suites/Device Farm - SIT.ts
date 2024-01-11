@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteCollectionEntity>
    <description></description>
-   <name>Device Farm - Android - Sit</name>
+   <name>Device Farm - SIT</name>
    <tag></tag>
    <delayBetweenInstances>0</delayBetweenInstances>
    <executionMode>PARALLEL</executionMode>
@@ -10,7 +10,7 @@
       <TestSuiteRunConfiguration>
          <configuration>
             <groupName>Web Desktop</groupName>
-            <profileName>sit</profileName>
+            <profileName>SIT</profileName>
             <requireConfigurationData>false</requireConfigurationData>
             <runConfigurationData>
                <entry>
@@ -26,6 +26,26 @@
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Feature Register</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Web Desktop</groupName>
+            <profileName>SIT</profileName>
+            <requireConfigurationData>false</requireConfigurationData>
+            <runConfigurationData>
+               <entry>
+                  <key>remoteWebDriverType</key>
+                  <value>Selenium</value>
+               </entry>
+               <entry>
+                  <key>remoteWebDriverUrl</key>
+                  <value>https://farmdemo.visiumlabs.com/wd/hub</value>
+               </entry>
+            </runConfigurationData>
+            <runConfigurationId>Remote</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Feature Calculator</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>
