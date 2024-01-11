@@ -15,14 +15,7 @@
       <guid>a5f964eb-728b-4f75-9d9f-eabad53c8524</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/IOS_Calculator - Device 1</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>ba2a12dc-8fe0-4395-927c-df97ac854d6e</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/IOS_Calculator - Device 2</testCaseId>
+      <testCaseId>Test Cases/iOS - Calculator</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

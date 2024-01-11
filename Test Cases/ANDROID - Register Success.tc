@@ -14,38 +14,38 @@ Then the correct dialog message should be displayed</comment>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>54754d72-6cc6-4a78-92fd-c5352e5f01b9</variableId>
+      <variableId>7b2027d0-4e12-429f-8b74-54e5c2e294cb</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>65db32cb-6310-4e54-9522-c8eb8edf1a48</variableId>
+      <variableId>c1589c96-8735-4171-bec0-90462a453ab4</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>c01a5baa-605b-42e4-8ea2-cafa5a843e6f</variableId>
+      <variableId>e62d81c2-77c6-4047-a752-aa7916031b49</variableId>
    </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>54754d72-6cc6-4a78-92fd-c5352e5f01b9</id>
+      <id>7b2027d0-4e12-429f-8b74-54e5c2e294cb</id>
       <masked>false</masked>
       <name>DeviceName</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>65db32cb-6310-4e54-9522-c8eb8edf1a48</id>
+      <id>c1589c96-8735-4171-bec0-90462a453ab4</id>
       <masked>false</masked>
       <name>UdId</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>c01a5baa-605b-42e4-8ea2-cafa5a843e6f</id>
+      <id>e62d81c2-77c6-4047-a752-aa7916031b49</id>
       <masked>false</masked>
       <name>PlatformVersion</name>
    </variable>

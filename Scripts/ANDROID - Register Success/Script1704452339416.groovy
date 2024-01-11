@@ -26,6 +26,7 @@ import java.net.URL as URL
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 
 CustomKeywords.'visium.SetCapability.android'(DeviceName, UdId, PlatformVersion)
 
@@ -48,3 +49,5 @@ Mobile.setText(findTestObject('Object Repository/Demo/Notes - Text Input'), 'AUT
 Mobile.tap(findTestObject('Object Repository/Demo/Save - Button'), 10)
 
 Mobile.delay(5)
+
+Mobile.closeApplication()

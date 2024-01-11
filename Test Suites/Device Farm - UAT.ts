@@ -25,7 +25,27 @@
             <runConfigurationId>Remote</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Feature Register</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Feature Register - Device 1</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Web Desktop</groupName>
+            <profileName>UAT</profileName>
+            <requireConfigurationData>false</requireConfigurationData>
+            <runConfigurationData>
+               <entry>
+                  <key>remoteWebDriverType</key>
+                  <value>Selenium</value>
+               </entry>
+               <entry>
+                  <key>remoteWebDriverUrl</key>
+                  <value>https://farmdemo.visiumlabs.com/wd/hub</value>
+               </entry>
+            </runConfigurationData>
+            <runConfigurationId>Remote</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Feature Register - Device 2</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>

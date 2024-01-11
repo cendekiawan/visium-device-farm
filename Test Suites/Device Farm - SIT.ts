@@ -25,7 +25,7 @@
             <runConfigurationId>Remote</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Feature Register</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Feature Register - Device 1</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
