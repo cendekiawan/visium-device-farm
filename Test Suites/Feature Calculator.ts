@@ -16,6 +16,33 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/iOS - Calculator</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>2569664b-ca30-4591-a62b-00d2262c1a52</id>
+         <iterationEntity>
+            <iterationType>SPECIFIC</iterationType>
+            <value>3</value>
+         </iterationEntity>
+         <testDataId>Data Files/User Matrix</testDataId>
+      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>2569664b-ca30-4591-a62b-00d2262c1a52</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>DeviceName</value>
+         <variableId>1933942f-2578-496b-8bdb-137869bf5d1c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2569664b-ca30-4591-a62b-00d2262c1a52</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>UdId</value>
+         <variableId>873099d2-d533-408f-ad92-7db0225373be</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2569664b-ca30-4591-a62b-00d2262c1a52</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>PlatformVersion</value>
+         <variableId>b5e5bdc4-352c-4a26-a9bd-945d3630fc1d</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

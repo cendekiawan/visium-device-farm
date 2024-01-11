@@ -26,15 +26,30 @@ import java.net.URL as URL
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 
-CustomKeywords.'visium.SetCapability.iOS'(DeviceName, UdId, PlatformVersion)
 
-Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Angka 8'), 10)
+		String webDriverVisiumFarmHub = "https://farmdemo.visiumlabs.com/wd/hub"
+		DesiredCapabilities capabilities = new DesiredCapabilities()
 
-Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Kali'), 10)
+		capabilities.setCapability("deviceName", "SM-J610F")
+		capabilities.setCapability("automationName", "uiautomator2")
+		capabilities.setCapability("udid", "9321f298")
+		capabilities.setCapability("platformName", "ANDROID")
+		capabilities.setCapability("platformVersion", "8.1.0")
+		capabilities.setCapability("noReset", true)
+		capabilities.setCapability("vf:accessKey", "brian:3b7e2401-0e46-4efb-9a06-193c1086b797")
+//		capabilities.setCapability("vf:appId", "3496437")
+//		capabilities.setCapability("vf:appId", "3309883")
+		capabilities.setCapability("appPackage", "com.viseksoftware.txdw")
+		capabilities.setCapability("appActivity", "com.viseksoftware.txdw.activities.MainContentActivity")
+		//				capabilities.setCapability("appPackage", "com.rimhimstudios.register")
+		//				capabilities.setCapability("appActivity", "com.rimhimstudios.register.MainActivity" )
+		//		capabilities.setCapability("vf:saveSession", true)
+		//		capabilities.setCapability("vf:saveVideoRecord", true)
+		//		capabilities.setCapability("vf:saveAppiumLog", true)
+		//		capabilities.setCapability("vf:saveDeviceLog", true)
+		//		capabilities.setCapability("vf:sessionName", "Android Automation Bank Mandiri")
+		AppiumDriverManager.createMobileDriver(MobileDriverType.ANDROID_DRIVER, capabilities, new URL(webDriverVisiumFarmHub))
 
-Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Angka 2'), 10)
-
-Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Total'), 10)
-
-Mobile.delay(5)
+Mobile.delay(15)
