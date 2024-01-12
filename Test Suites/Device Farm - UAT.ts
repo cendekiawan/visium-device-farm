@@ -64,7 +64,7 @@
             </runConfigurationData>
             <runConfigurationId>Remote</runConfigurationId>
          </configuration>
-         <runEnabled>false</runEnabled>
+         <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Feature Calculator</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
