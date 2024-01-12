@@ -25,7 +25,7 @@ fi
 # Make the GET request and capture the JSON response
 response=$(curl -s -X GET https://farmdemo.visiumlabs.com/api/devices?os=iOS \
 -H "Content-Type: application/json" \
--H "X-VisiumFarm-Api-Key: Fqxr7pj3Pt.fcHvJMeCzbdTxK5Mu8haeJ2CL0iDASQddsRD0WsU")
+-H "X-VisiumFarm-Api-Key: 2q3Ue23QgD.Xj0TMbjEpzr2Zf6PfngagnetePGiOjubCr6aUwN0")
 
 # Extract the 'id' attributes from the JSON response and format output with double quotes
 ids=$(echo "$response" | jq -r '[.[] | .deviceId] | map("\"" + . + "\"") | join(",")')
@@ -39,7 +39,7 @@ export ids=$ids
 
 # step 3: upload IPA file and get the id of IPA file
 # Set the necessary variables
-API_KEY="Fqxr7pj3Pt.fcHvJMeCzbdTxK5Mu8haeJ2CL0iDASQddsRD0WsU"
+API_KEY="2q3Ue23QgD.Xj0TMbjEpzr2Zf6PfngagnetePGiOjubCr6aUwN0"
 FILE_PATH="testingVisium.ipa"
 API_URL="https://farmdemo.visiumlabs.com/api/v1/apps"
 
