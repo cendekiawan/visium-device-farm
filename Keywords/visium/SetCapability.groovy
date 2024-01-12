@@ -63,14 +63,13 @@ class SetCapability {
 		capabilities.setCapability("noReset", true)
 		capabilities.setCapability("vf:accessKey", "brian:3b7e2401-0e46-4efb-9a06-193c1086b797")
 		capabilities.setCapability("vf:appId", "${GlobalVariable.appID}")
-		//		capabilities.setCapability("vf:appId", "3309883")
 		//				capabilities.setCapability("appPackage", "com.rimhimstudios.register")
 		//				capabilities.setCapability("appActivity", "com.rimhimstudios.register.MainActivity" )
-		//		capabilities.setCapability("vf:saveSession", true)
-		//		capabilities.setCapability("vf:saveVideoRecord", true)
-		//		capabilities.setCapability("vf:saveAppiumLog", true)
-		//		capabilities.setCapability("vf:saveDeviceLog", true)
-		//		capabilities.setCapability("vf:sessionName", "Android Automation Bank Mandiri")
+		capabilities.setCapability("vf:saveSession", true)
+		capabilities.setCapability("vf:saveVideoRecord", true)
+		capabilities.setCapability("vf:saveAppiumLog", true)
+		capabilities.setCapability("vf:saveDeviceLog", true)
+		capabilities.setCapability("vf:sessionName", "Android Automation DDL")
 		AppiumDriverManager.createMobileDriver(MobileDriverType.ANDROID_DRIVER, capabilities, new URL(webDriverVisiumFarmHub))
 	}
 
@@ -90,7 +89,7 @@ class SetCapability {
 		capabilities.setCapability("vf:saveVideoRecord", true)
 		capabilities.setCapability("vf:saveAppiumLog", true)
 		capabilities.setCapability("vf:saveDeviceLog", true)
-		capabilities.setCapability("vf:sessionName", "Android Automation Bank Mandiri")
+		capabilities.setCapability("vf:sessionName", "iOS Automation DDL")
 		AppiumDriverManager.createMobileDriver(MobileDriverType.IOS_DRIVER, capabilities, new URL(webDriverVisiumFarmHub))
 	}
 }
