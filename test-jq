@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Call API') {
             steps {
-                sh 'chmod oug+x ./test.sh'
+                sh 'chmod +x ./test.sh'
                 sh './test.sh'
             }
         }
