@@ -61,7 +61,7 @@ export appId=$appId
 # step 4: Install the IPA in all iOS devices
 curl -X POST https://farmdemo.visiumlabs.com/api/apk/install \
 -H "Content-Type: application/json" \
--H "X-VisiumFarm-Api-Key: Fqxr7pj3Pt.fcHvJMeCzbdTxK5Mu8haeJ2CL0iDASQddsRD0WsU" \
+-H "X-VisiumFarm-Api-Key: 2q3Ue23QgD.Xj0TMbjEpzr2Zf6PfngagnetePGiOjubCr6aUwN0" \
 -d '{
   "appList": [
     {
