@@ -31,6 +31,12 @@ CustomKeywords.'visium.SetCapability.iOS'(DeviceName, UdId, PlatformVersion)
 
 Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Angka 8'), 10)
 
+Mobile.delay(5)
+
+Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Angka 8'), 10)
+
+Mobile.delay(5)
+
 Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Kali'), 10)
 
 Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Angka 2'), 10)
