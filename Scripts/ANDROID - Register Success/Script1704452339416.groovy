@@ -42,10 +42,6 @@ Mobile.setText(findTestObject('Object Repository/Demo/Email - Text Input'), 'AUT
 
 Mobile.setText(findTestObject('Object Repository/Demo/Alternate Email - Text Input'), 'ROBOT@DDL.COM', 10)
 
-Mobile.setText(findTestObject('Object Repository/Demo/Allergies - Text Input'), 'TEST AUTOMATION', 10)
-
-Mobile.setText(findTestObject('Object Repository/Demo/Notes - Text Input'), 'AUTOMATION', 10)
-
 Mobile.tap(findTestObject('Object Repository/Demo/Save - Button'), 10)
 
 Mobile.delay(5)
