@@ -46,12 +46,12 @@ class SetCapability {
 
 	@Keyword
 	def android(String DeviceName, String UdId, String PlatformVersion){
-//		Object apps = WS.sendRequest(findTestObject('Object Repository/WS/getApps - Android'))
-//		def jsonResponse = new JsonSlurper().parseText(apps.getResponseText())
-//		def lastIndex = jsonResponse.size() - 1
-//		def lastText = jsonResponse[lastIndex].id
-//		GlobalVariable.appID = lastText
-//		println(GlobalVariable.appID)
+		//		Object apps = WS.sendRequest(findTestObject('Object Repository/WS/getApps - Android'))
+		//		def jsonResponse = new JsonSlurper().parseText(apps.getResponseText())
+		//		def lastIndex = jsonResponse.size() - 1
+		//		def lastText = jsonResponse[lastIndex].id
+		//		GlobalVariable.appID = lastText
+		//		println(GlobalVariable.appID)
 		String webDriverVisiumFarmHub = "https://farmdemo.visiumlabs.com/wd/hub"
 		DesiredCapabilities capabilities = new DesiredCapabilities()
 
