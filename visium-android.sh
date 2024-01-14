@@ -1,6 +1,25 @@
 #!/bin/bash
 set -x
 
+# step 1: check and install jq
+# Check if jq is installed
+if ! command -v jq &> /dev/null; then
+    echo "jq is not installed. Installing..."
+    
+    # Update package lists and install jq
+    apt-get update
+    apt-get install -y jq
+
+    # Check installation success
+    if command -v jq &> /dev/null; then
+        echo "jq has been successfully installed."
+    else
+        echo "Failed to install jq. Please install it manually."
+    fi
+else
+    echo "jq is already installed."
+fi
+
 
 # step 2: get all devide id of Android
 # Make the GET request and capture the JSON response
