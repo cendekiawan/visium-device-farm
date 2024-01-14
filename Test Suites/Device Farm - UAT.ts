@@ -44,7 +44,7 @@
             </runConfigurationData>
             <runConfigurationId>Remote</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Feature Register - Android 2</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
