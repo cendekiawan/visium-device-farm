@@ -6,7 +6,7 @@
    <UUID>5f0195b1-a6b2-4e85-af26-9813443bde40</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>/Users/macbook/Katalon Studio/Setup 2/Setup.prj</projectFileLocation>
+   <projectFileLocation>/Users/macbook/Documents/GitHub/visium-device-farm/Setup.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
