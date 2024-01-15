@@ -9,7 +9,7 @@ response=$(curl -s -X GET https://farmdemo.visiumlabs.com/api/devices?os=Android
 -H "X-VisiumFarm-Api-Key: 2q3Ue23QgD.Xj0TMbjEpzr2Zf6PfngagnetePGiOjubCr6aUwN0")
 
 # Extract the 'id' attributes from the JSON response and format output with double quotes
-ids=9321f298,52003cffeced945f
+ids='"9321f298","52003cffeced945f"'
 
 
 # Output the extracted 'id' attributes in the required format
