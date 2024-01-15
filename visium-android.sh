@@ -2,7 +2,7 @@
 set -x
 
 
-# step 2: get all devide id of Android
+# step 1: get all devide id of Android
 # Make the GET request and capture the JSON response
 response=$(curl -s -X GET https://farmdemo.visiumlabs.com/api/devices?os=Android \
 -H "Content-Type: application/json" \
@@ -18,7 +18,7 @@ echo "$ids"
 export ids=$ids
 
 
-# step 3: upload APK file and get the id of APK file
+# step 2: upload APK file and get the id of APK file
 # Set the necessary variables
 API_KEY="2q3Ue23QgD.Xj0TMbjEpzr2Zf6PfngagnetePGiOjubCr6aUwN0"
 FILE_PATH="Register_2.0_Apkpure.apk"
@@ -39,7 +39,7 @@ echo "The extracted appId is: $appId"
 
 export appId=$appId
 
-# step 4: Install the APK in all Android devices
+# step 3: Install the APK in all Android devices
 curl -X POST https://farmdemo.visiumlabs.com/api/apk/install \
 -H "Content-Type: application/json" \
 -H "X-VisiumFarm-Api-Key: 2q3Ue23QgD.Xj0TMbjEpzr2Zf6PfngagnetePGiOjubCr6aUwN0" \
