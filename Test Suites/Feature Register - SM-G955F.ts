@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Feature Calculator</name>
+   <name>Feature Register - SM-G955F</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
-   <numberOfRerun>0</numberOfRerun>
+   <numberOfRerun>3</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
-   <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>3fa79fda-0c04-46b0-b5b7-7a927a2763c5</testSuiteGuid>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>7225a621-a465-488f-8a9c-12d7cb3636e7</testSuiteGuid>
    <testCaseLink>
-      <guid>a5f964eb-728b-4f75-9d9f-eabad53c8524</guid>
+      <guid>883eb271-69cd-4064-857e-da0beb2f824c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/iOS - Calculator</testCaseId>
+      <testCaseId>Test Cases/ANDROID - Register Success</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>2569664b-ca30-4591-a62b-00d2262c1a52</id>
+         <id>d14b7906-4dc8-4361-8c0f-fabaf2a5854d</id>
          <iterationEntity>
             <iterationType>SPECIFIC</iterationType>
-            <value>3</value>
+            <value>4</value>
          </iterationEntity>
          <testDataId>Data Files/User Matrix</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId>2569664b-ca30-4591-a62b-00d2262c1a52</testDataLinkId>
+         <testDataLinkId>d14b7906-4dc8-4361-8c0f-fabaf2a5854d</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>DeviceName</value>
-         <variableId>1933942f-2578-496b-8bdb-137869bf5d1c</variableId>
+         <variableId>9fb33da1-8c11-415f-93a7-6fd60d7af839</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>2569664b-ca30-4591-a62b-00d2262c1a52</testDataLinkId>
+         <testDataLinkId>d14b7906-4dc8-4361-8c0f-fabaf2a5854d</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>UdId</value>
-         <variableId>873099d2-d533-408f-ad92-7db0225373be</variableId>
+         <variableId>13bd77ca-65d8-462b-acc0-ff53b47baf71</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>2569664b-ca30-4591-a62b-00d2262c1a52</testDataLinkId>
+         <testDataLinkId>d14b7906-4dc8-4361-8c0f-fabaf2a5854d</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>PlatformVersion</value>
-         <variableId>b5e5bdc4-352c-4a26-a9bd-945d3630fc1d</variableId>
+         <variableId>ed39d827-a5bd-4ddf-9282-644e8a4c41b6</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

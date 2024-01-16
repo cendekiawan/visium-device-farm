@@ -11,31 +11,37 @@
    <driver>InternalData</driver>
    <data>SM-A520F 52003cffeced945f 8.0.0 Android Samsung+SM-A520F</data>
    <data>SM-J610F 9321f298 8.1.0 Android Samsung+%09SM-J610F</data>
+   <data>SM-A750F 320046d747f8b5c3 9 Android SM-A750F</data>
+   <data>SM-G955F ce12160ca458b73003 9 Android SM-G955F</data>
+   <data>MI+8+Lite a52bcc65 8.1.0 Android MI+8+Lite</data>
+   <data>Mi+MIX+2 bbbb52ab 7.1.1 Android Mi+MIX+2</data>
    <data>iPhone+8 52faf304d5147795cac1003572fb3b50d74ef5d4 15.0.2 iOS iPhone+8</data>
+   <data>iPhone+XR 00008020-0014458A14BA002E 17.3 iOS iPhone+XR</data>
+   <data>iPhone+15 00008120-000914192650A01E 17.1 iOS iPhone+15</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
       <name>DeviceName</name>
-      <size>3</size>
+      <size>9</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>1</columnIndex>
       <name>UdId</name>
-      <size>3</size>
+      <size>9</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>2</columnIndex>
       <name>PlatformVersion</name>
-      <size>3</size>
+      <size>9</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>3</columnIndex>
       <name>OS</name>
-      <size>3</size>
+      <size>9</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>4</columnIndex>
       <name>Phone Name</name>
-      <size>3</size>
+      <size>9</size>
    </internalDataColumns>
    <isInternalPath>false</isInternalPath>
    <query></query>
