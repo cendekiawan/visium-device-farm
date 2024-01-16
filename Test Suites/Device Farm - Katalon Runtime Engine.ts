@@ -5,7 +5,7 @@
    <tag></tag>
    <delayBetweenInstances>0</delayBetweenInstances>
    <executionMode>PARALLEL</executionMode>
-   <maxConcurrentInstances>9</maxConcurrentInstances>
+   <maxConcurrentInstances>7</maxConcurrentInstances>
    <testSuiteRunConfigurations>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -164,7 +164,7 @@
             </runConfigurationData>
             <runConfigurationId>Remote</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Feature Calculator - iPhone XR</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
@@ -184,7 +184,7 @@
             </runConfigurationData>
             <runConfigurationId>Remote</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Feature Calculator - iPhone 15</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
