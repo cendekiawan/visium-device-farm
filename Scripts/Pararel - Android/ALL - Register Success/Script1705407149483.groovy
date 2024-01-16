@@ -31,22 +31,21 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 String webDriverVisiumFarmHub = "https://farmdemo.visiumlabs.com/wd/hub"
 DesiredCapabilities capabilities = new DesiredCapabilities()
 
-capabilities.setCapability("deviceName", "Mi MIX 2")
+capabilities.setCapability("deviceName", DeviceName)
 capabilities.setCapability("automationName", "uiautomator2")
-capabilities.setCapability("udid", "bbbb52ab")
+capabilities.setCapability("udid", UdId)
 capabilities.setCapability("platformName", "ANDROID")
-capabilities.setCapability("platformVersion", "7.1.1")
+capabilities.setCapability("platformVersion", PlatformVersion)
 capabilities.setCapability("noReset", true)
 capabilities.setCapability("vf:accessKey", "brian:3b7e2401-0e46-4efb-9a06-193c1086b797")
-capabilities.setCapability("vf:appId", "4800849")
-//capabilities.setCapability("appium:appPackage", "com.rimhimstudios.register")
-//capabilities.setCapability("appium:appActivity", "com.rimhimstudios.register.MainActivity")
+//capabilities.setCapability("vf:appId", "${GlobalVariable.appID}")
+capabilities.setCapability("appium:appPackage", "com.rimhimstudios.register")
+capabilities.setCapability("appium:appActivity", "com.rimhimstudios.register.MainActivity")
 capabilities.setCapability("vf:saveSession", true)
 capabilities.setCapability("vf:saveVideoRecord", true)
 capabilities.setCapability("vf:saveAppiumLog", true)
 capabilities.setCapability("vf:saveDeviceLog", true)
 capabilities.setCapability("vf:sessionName", "Android Automation DDL")
-
 AppiumDriverManager.createMobileDriver(MobileDriverType.ANDROID_DRIVER, capabilities, new URL(webDriverVisiumFarmHub))
 
 Mobile.tap(findTestObject('Object Repository/Demo/Add - Button'), 10)
