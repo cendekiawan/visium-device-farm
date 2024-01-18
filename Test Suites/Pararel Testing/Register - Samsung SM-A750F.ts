@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Register - SM-J610F</name>
+   <name>Register - Samsung SM-A750F</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,30 +10,30 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>bcd2cc71-cbf6-4ace-9111-072df0f24b24</testSuiteGuid>
+   <testSuiteGuid>e3f2aac9-cca6-4ae3-a157-ef5cef94a5b0</testSuiteGuid>
    <testCaseLink>
-      <guid>377842ad-674f-42df-9928-a43de75e6e26</guid>
+      <guid>eb561ddf-d5b5-4c92-b645-3a6d57c5aae2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Android/Register Success - SM-J610F</testCaseId>
+      <testCaseId>Test Cases/Android/Register Success - Samsung SM-A750F</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>c37cbf3a-95c2-4155-8084-c62c01271bd3</variableId>
+         <variableId>e5e6419e-7b2e-4aca-b7a0-39ba0e0f5809</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>b004c291-159e-405f-aa9f-3404edc98c7a</variableId>
+         <variableId>69aeea3b-4d88-40f4-8e54-65bc1a6ca469</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>ac9081dc-a48c-4ec6-832f-6d31373e6d10</variableId>
+         <variableId>c51df53f-de02-4074-8304-8b83816fa267</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

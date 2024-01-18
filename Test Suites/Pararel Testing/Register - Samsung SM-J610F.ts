@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Register - MI 8 Lite</name>
+   <name>Register - Samsung SM-J610F</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,30 +10,30 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>ab7e14b3-4783-48dd-9d16-076962c45f9e</testSuiteGuid>
+   <testSuiteGuid>bcd2cc71-cbf6-4ace-9111-072df0f24b24</testSuiteGuid>
    <testCaseLink>
-      <guid>6e1e9a56-49a1-4e1a-bba3-ff841464b181</guid>
+      <guid>377842ad-674f-42df-9928-a43de75e6e26</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Android/Register Success - MI 8 Lite</testCaseId>
+      <testCaseId>Test Cases/Android/Register Success - Samsung SM-J610F</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>3ca1b0fc-9761-4cf0-984c-5d52789697fa</variableId>
+         <variableId>c37cbf3a-95c2-4155-8084-c62c01271bd3</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>5ac2eb70-7160-4087-b02f-c902e41186f0</variableId>
+         <variableId>b004c291-159e-405f-aa9f-3404edc98c7a</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>6ccca1a3-a3b5-4abd-b28e-6bc604dc280b</variableId>
+         <variableId>ac9081dc-a48c-4ec6-832f-6d31373e6d10</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

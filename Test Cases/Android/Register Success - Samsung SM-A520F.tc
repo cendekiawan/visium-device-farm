@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>- An automation script to help user getting started with Mobile automation testing.
 - Script Content: Click &quot;START ALARM SERVICE&quot; and click &quot;STOP ALARM SERVICE&quot;, verify alert show is correct</description>
-   <name>Register Success - SM-A520F</name>
+   <name>Register Success - Samsung SM-A520F</name>
    <tag></tag>
    <comment>Story: Verify correct alarm message
 Given that user has started an application

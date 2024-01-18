@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Register - SM-G955F</name>
+   <name>Register - Samsung SM-S918B</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,30 +10,30 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>d869893d-556a-4704-8162-258ef181d9fa</testSuiteGuid>
+   <testSuiteGuid>8b08da90-9774-4453-9f7d-1aa26103c860</testSuiteGuid>
    <testCaseLink>
-      <guid>d3e21f55-04f7-4c27-94c9-c996dcdbc954</guid>
+      <guid>6e1e9a56-49a1-4e1a-bba3-ff841464b181</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Android/Register Success - SM-G955F</testCaseId>
+      <testCaseId>Test Cases/Android/Register Success - Xiaomi MI 8 Lite</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>e81ae9fd-8058-4220-adf5-effde96ae005</variableId>
+         <variableId>3ca1b0fc-9761-4cf0-984c-5d52789697fa</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>b48541b1-68e7-4067-a464-07ff4149c474</variableId>
+         <variableId>5ac2eb70-7160-4087-b02f-c902e41186f0</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>76f7f7cc-a245-4c41-b0e3-8d4c7f6a421c</variableId>
+         <variableId>6ccca1a3-a3b5-4abd-b28e-6bc604dc280b</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

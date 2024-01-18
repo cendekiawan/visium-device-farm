@@ -2,50 +2,50 @@
 <TestCaseEntity>
    <description>- An automation script to help user getting started with Mobile automation testing.
 - Script Content: Click &quot;START ALARM SERVICE&quot; and click &quot;STOP ALARM SERVICE&quot;, verify alert show is correct</description>
-   <name>Register Success - SM-J610F</name>
+   <name>Register Success - Xiaomi MI 8 Lite</name>
    <tag></tag>
    <comment>Story: Verify correct alarm message
 Given that user has started an application
 And he navigates the application to Activity form
 When he taps on the Custom Dialog button
 Then the correct dialog message should be displayed</comment>
-   <testCaseGuid>6fe3aa09-79c9-4429-b7db-ca6cd0460c91</testCaseGuid>
+   <testCaseGuid>86351d6b-a276-4846-91fb-80b3951144ab</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>c37cbf3a-95c2-4155-8084-c62c01271bd3</variableId>
+      <variableId>3ca1b0fc-9761-4cf0-984c-5d52789697fa</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>b004c291-159e-405f-aa9f-3404edc98c7a</variableId>
+      <variableId>5ac2eb70-7160-4087-b02f-c902e41186f0</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>ac9081dc-a48c-4ec6-832f-6d31373e6d10</variableId>
+      <variableId>6ccca1a3-a3b5-4abd-b28e-6bc604dc280b</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>findTestData(null).getValue(1, 1)</defaultValue>
       <description></description>
-      <id>c37cbf3a-95c2-4155-8084-c62c01271bd3</id>
+      <id>3ca1b0fc-9761-4cf0-984c-5d52789697fa</id>
       <masked>false</masked>
       <name>DeviceName</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>b004c291-159e-405f-aa9f-3404edc98c7a</id>
+      <id>5ac2eb70-7160-4087-b02f-c902e41186f0</id>
       <masked>false</masked>
       <name>UdId</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>ac9081dc-a48c-4ec6-832f-6d31373e6d10</id>
+      <id>6ccca1a3-a3b5-4abd-b28e-6bc604dc280b</id>
       <masked>false</masked>
       <name>PlatformVersion</name>
    </variable>

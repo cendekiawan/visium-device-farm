@@ -15,33 +15,38 @@
    <data>SM-G955F ce12160ca458b73003 9 Android SM-G955F</data>
    <data>MI+8+Lite a52bcc65 8.1.0 Android MI+8+Lite</data>
    <data>Mi+MIX+2 bbbb52ab 7.1.1 Android Mi+MIX+2</data>
+   <data>VIA_F1 FYINQWLRLNCUIRBA 6.0 Android Casper+VIA_F1+</data>
+   <data>LM-G710 LMG710EMd22afe89 9 Android Lge+LM-G710+</data>
+   <data>SM-N770F R38MB01Y0EY 12 Android Samsung+SM-N770F+</data>
+   <data>SM-N960F 266da0d03a017ece 10 Android Samsung+SM-N960F+</data>
+   <data>SM-S918B R5CW91SY4LR 14 Android Samsung+SM-S918B+</data>
    <data>iPhone+8 52faf304d5147795cac1003572fb3b50d74ef5d4 15.0.2 iOS iPhone+8</data>
    <data>iPhone+XR 00008020-0014458A14BA002E 17.3 iOS iPhone+XR</data>
    <data>iPhone+15 00008120-000914192650A01E 17.1 iOS iPhone+15</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
       <name>DeviceName</name>
-      <size>9</size>
+      <size>14</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>1</columnIndex>
       <name>UdId</name>
-      <size>9</size>
+      <size>14</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>2</columnIndex>
       <name>PlatformVersion</name>
-      <size>9</size>
+      <size>14</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>3</columnIndex>
       <name>OS</name>
-      <size>9</size>
+      <size>14</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>4</columnIndex>
       <name>Phone Name</name>
-      <size>9</size>
+      <size>14</size>
    </internalDataColumns>
    <isInternalPath>false</isInternalPath>
    <query></query>
