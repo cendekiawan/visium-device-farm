@@ -9,7 +9,7 @@ response=$(curl -s -X GET https://farmdemo.visiumlabs.com/api/devices?os=iOS \
 -H "X-VisiumFarm-Api-Key: 2q3Ue23QgD.Xj0TMbjEpzr2Zf6PfngagnetePGiOjubCr6aUwN0")
 
 # Extract the 'id' attributes from the JSON response and format output with double quotes
-ids='"52faf304d5147795cac1003572fb3b50d74ef5d4","00008020-0014458A14BA002E","00008120-000914192650A01E"'
+ids='"2b9c4327ae1d7266c8c374ccdb20dcbf25e5859e","ba17673a69babbfb4caf35daee88e2090a7215d8","00008120-000914192650A01E","00008020-0014458A14BA002E","4488f63b32e9e5bc1b42799eff3f2cbe0d01936c"'
 
 
 # Output the extracted 'id' attributes in the required format
