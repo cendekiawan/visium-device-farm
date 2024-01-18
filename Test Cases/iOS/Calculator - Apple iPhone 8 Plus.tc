@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>- An automation script to help user getting started with Mobile automation testing.
+- Script Content: Click &quot;START ALARM SERVICE&quot; and click &quot;STOP ALARM SERVICE&quot;, verify alert show is correct</description>
+   <name>Calculator - Apple iPhone 8 Plus</name>
+   <tag></tag>
+   <comment>Story: Verify correct alarm message
+Given that user has started an application
+And he navigates the application to Activity form
+When he taps on the Custom Dialog button
+Then the correct dialog message should be displayed</comment>
+   <testCaseGuid>79e80e4d-8abe-47c9-9276-b4b946bf818a</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>de851c99-b1a8-4715-9a25-0d502dbfd0cb</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>243b6243-a736-4805-b5c5-4459bba789ca</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b57a93f9-cbd8-4108-8481-423e26b4d924</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>de851c99-b1a8-4715-9a25-0d502dbfd0cb</id>
+      <masked>false</masked>
+      <name>DeviceName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>243b6243-a736-4805-b5c5-4459bba789ca</id>
+      <masked>false</masked>
+      <name>UdId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b57a93f9-cbd8-4108-8481-423e26b4d924</id>
+      <masked>false</masked>
+      <name>PlatformVersion</name>
+   </variable>
+</TestCaseEntity>
