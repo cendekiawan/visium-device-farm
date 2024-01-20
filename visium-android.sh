@@ -1,15 +1,34 @@
 #!/bin/bash
 set -x
 
+# step 1: check and install jq
+# Check if jq is installed
+if ! command -v jq &> /dev/null; then
+    echo "jq is not installed. Installing..."
+    
+    # Update package lists and install jq
+    apt-get update
+    apt-get install -y jq
 
-# step 1: get all devide id of Android
+    # Check installation success
+    if command -v jq &> /dev/null; then
+        echo "jq has been successfully installed."
+    else
+        echo "Failed to install jq. Please install it manually."
+    fi
+else
+    echo "jq is already installed."
+fi
+
+
+# step 2: get all devide id of Android
 # Make the GET request and capture the JSON response
 response=$(curl -s -X GET https://farmdemo.visiumlabs.com/api/devices?os=Android \
 -H "Content-Type: application/json" \
 -H "X-VisiumFarm-Api-Key: 2q3Ue23QgD.Xj0TMbjEpzr2Zf6PfngagnetePGiOjubCr6aUwN0")
 
 # Extract the 'id' attributes from the JSON response and format output with double quotes
-ids='"FYINQWLRLNCUIRBA","0123456789ABCDEF","LMG710EMd22afe89","52003cffeced945f","R38MB01Y0EY","266da0d03a017ece","R5CW91SY4LR","a52bcc65"'
+ids=$(echo "$response" | jq -r '[.[] | .deviceId] | map("\"" + . + "\"") | join(",")')
 
 
 # Output the extracted 'id' attributes in the required format
@@ -18,7 +37,7 @@ echo "$ids"
 export ids=$ids
 
 
-# step 2: upload APK file and get the id of APK file
+# step 3: upload APK file and get the id of APK file
 # Set the necessary variables
 API_KEY="2q3Ue23QgD.Xj0TMbjEpzr2Zf6PfngagnetePGiOjubCr6aUwN0"
 FILE_PATH="Register_2.0_Apkpure.apk"
@@ -39,7 +58,7 @@ echo "The extracted appId is: $appId"
 
 export appId=$appId
 
-# step 3: Install the APK in all Android devices
+# step 4: Install the APK in all Android devices
 curl -X POST https://farmdemo.visiumlabs.com/api/apk/install \
 -H "Content-Type: application/json" \
 -H "X-VisiumFarm-Api-Key: 2q3Ue23QgD.Xj0TMbjEpzr2Zf6PfngagnetePGiOjubCr6aUwN0" \
