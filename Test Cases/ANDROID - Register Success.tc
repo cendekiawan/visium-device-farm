@@ -28,6 +28,12 @@ Then the correct dialog message should be displayed</comment>
       <value></value>
       <variableId>ed39d827-a5bd-4ddf-9282-644e8a4c41b6</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>17ef8148-8ed0-49d0-8d83-ce3d62831946</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
@@ -48,5 +54,12 @@ Then the correct dialog message should be displayed</comment>
       <id>ed39d827-a5bd-4ddf-9282-644e8a4c41b6</id>
       <masked>false</masked>
       <name>PlatformVersion</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>17ef8148-8ed0-49d0-8d83-ce3d62831946</id>
+      <masked>false</masked>
+      <name>Contoh</name>
    </variable>
 </TestCaseEntity>

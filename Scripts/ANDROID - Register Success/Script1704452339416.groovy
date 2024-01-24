@@ -32,7 +32,7 @@ CustomKeywords.'visium.SetCapability.android'(DeviceName, UdId, PlatformVersion)
 
 Mobile.tap(findTestObject('Object Repository/Demo/Add - Button'), 10)
 
-Mobile.setText(findTestObject('Object Repository/Demo/Name - Text Input'), 'DDL AUTOMATION', 10)
+Mobile.setText(findTestObject('Object Repository/Demo/Name - Text Input'), Contoh, 10)
 
 Mobile.setText(findTestObject('Object Repository/Demo/Phone - Text Input'), '0857623527283', 10)
 

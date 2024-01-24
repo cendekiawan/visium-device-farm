@@ -30,22 +30,42 @@ import org.openqa.selenium.WebDriver
 import com.kms.katalon.core.mobile.driver.MobileDriverType
 import com.kms.katalon.core.appium.driver.AppiumDriverManager
 import io.appium.java_client.remote.MobileCapabilityType
-import io.appium.java_client.AppiumDriver
-import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.mobile.helper.MobileElementCommonHelper
 import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
-import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.util.KeywordUtil
-import io.appium.java_client.AppiumDriver
+import groovy.json.JsonSlurper
 
 class Visium {
 	
 	@AfterTestCase
-	def sampleAfterTestCase() {
+	def sampleAfterTestCase(TestCaseContext testCaseContext) {
 //		AppiumDriver<?> driver = MobileDriverFactory.getDriver()
 //		
-		AppiumDriverManager.closeDriver()
+		
+		//Set Zephyr Status
+		if (testCaseContext.getTestCaseStatus()=="PASSED")
+			GlobalVariable.Zephyr_StatusName=1
+		else if (testCaseContext.getTestCaseStatus()=="FAILED")
+			GlobalVariable.Zephyr_StatusName=2
+		else
+			GlobalVariable.Zephyr_StatusName="Not Executed"
+		//Call API to Push Result to Zephyr by creating Test case execution
+		WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Status'))
+		
+		
+		//Set Zephyr Comment
+		if (testCaseContext.getTestCaseStatus()=="PASSED")
+			WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Comment - Passed'))
+		else if (testCaseContext.getTestCaseStatus()=="FAILED")
+			GlobalVariable.Zephyr_StatusName=2
+		else
+			GlobalVariable.Zephyr_StatusName="Not Executed"
+		//Call API to Push Comment to Zephyr
+		
+		
+		
+		//AppiumDriverManager.closeDriver()
 	}
 }
