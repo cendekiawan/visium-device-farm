@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>DOFF-11217_Change Status_Xiaomi-Note-10</name>
+   <name>DOFF-11217_Change Status_Xiaomi Note 10</name>
    <tag>DOFF-8982</tag>
    <comment></comment>
    <testCaseGuid>c5b6675d-ada1-4b0e-b3a4-4393fc632846</testCaseGuid>

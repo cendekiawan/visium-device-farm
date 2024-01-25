@@ -32,6 +32,11 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>''</initValue>
+      <name>Zephyr_Id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
       <name>Device_Name</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

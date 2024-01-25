@@ -21,48 +21,56 @@ import com.kms.katalon.core.annotation.AfterTestCase
 import com.kms.katalon.core.annotation.AfterTestSuite
 import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.context.TestSuiteContext
-import org.openqa.selenium.remote.DesiredCapabilities
-import io.appium.java_client.AppiumDriver
-import io.appium.java_client.MobileElement
-import java.net.URL
-import io.appium.java_client.android.AndroidDriver
-import org.openqa.selenium.WebDriver
-import com.kms.katalon.core.mobile.driver.MobileDriverType
-import com.kms.katalon.core.appium.driver.AppiumDriverManager
-import io.appium.java_client.remote.MobileCapabilityType
-import org.openqa.selenium.WebElement
-import com.kms.katalon.core.annotation.Keyword
-import com.kms.katalon.core.mobile.helper.MobileElementCommonHelper
-import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
-import com.kms.katalon.core.util.KeywordUtil
 import groovy.json.JsonSlurper
 
-class Visium {
+
+class Hooks {
+	/**
+	 * Executes before every test case starts.
+	 * @param testCaseContext related information of the executed test case.
+	 */
+	@BeforeTestCase
+	def sampleBeforeTestCase(TestCaseContext testCaseContext) {
+		TestCase testCase = findTestCase(testCaseContext.getTestCaseId())
+		GlobalVariable.Zephyr_TestCaseKey=testCase.getName().split("_")[0]
+		GlobalVariable.Device_Name=testCase.getName().split("_")[2]
+		println(GlobalVariable.Zephyr_TestCaseKey)
+		println(GlobalVariable.Device_Name)
+		Object getId = WS.sendRequest(findTestObject('Object Repository/Zephyr/Get ID'))
+		// Parse JSON
+		def jsonSlurper = new JsonSlurper()
+		def json = jsonSlurper.parseText(getId.getResponseText())
+		
+		// Extract ID from JSON
+		def executionId = json.executions[0].execution.id
+		
+		GlobalVariable.Zephyr_Id = executionId
+		println(GlobalVariable.Zephyr_Id)
+		
+		
+	}
+	
 	
 	@AfterTestCase
 	def sampleAfterTestCase(TestCaseContext testCaseContext) {
 //		AppiumDriver<?> driver = MobileDriverFactory.getDriver()
-//		
+//
 		
 		//Set Zephyr Status
-		if (testCaseContext.getTestCaseStatus()=="PASSED")
-			GlobalVariable.Zephyr_StatusName=1
-		else if (testCaseContext.getTestCaseStatus()=="FAILED")
-			GlobalVariable.Zephyr_StatusName=2
-		else
-			GlobalVariable.Zephyr_StatusName="Not Executed"
+		if (testCaseContext.getTestCaseStatus()=="PASSED") {
+				GlobalVariable.Zephyr_StatusName=1
+				WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Comment - Passed'))
+			}
+		else if (testCaseContext.getTestCaseStatus()=="FAILED" || testCaseContext.getTestCaseStatus()=="ERROR") {
+				GlobalVariable.Zephyr_StatusName=2
+				WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Comment - Failed'))
+		}
+//		else (testCaseContext.getTestCaseStatus()=="ERROR")
+//				GlobalVariable.Zephyr_StatusName=2
+			
 		//Call API to Push Result to Zephyr by creating Test case execution
 		WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Status'))
 		
-		
-		//Set Zephyr Comment
-		if (testCaseContext.getTestCaseStatus()=="PASSED")
-			WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Comment - Passed'))
-		else if (testCaseContext.getTestCaseStatus()=="FAILED")
-			GlobalVariable.Zephyr_StatusName=2
-		else
-			GlobalVariable.Zephyr_StatusName="Not Executed"
-		//Call API to Push Comment to Zephyr
 		
 		
 		

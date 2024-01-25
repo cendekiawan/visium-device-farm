@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Update Status</name>
+   <name>Update Comment - Failed</name>
    <tag></tag>
-   <elementGuidId>c21c9ce3-1220-4e2d-89fd-bdf1a8dc2ff1</elementGuidId>
+   <elementGuidId>b3d3abe2-2a16-4287-9449-11ba28cdccd3</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
@@ -20,7 +20,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;status\&quot; : \&quot;${GlobalVariable.Zephyr_StatusName}\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;body\&quot;: \&quot;${GlobalVariable.Device_Name} Automation Failed Or Error\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -28,24 +28,24 @@
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Authorization</name>
+      <name>Content-Type</name>
       <type>Main</type>
-      <value>Bearer NzkwOTI3NDE5NTgyOj+lE78UR8Hm4ch73XP+Zaj9HtI5</value>
-      <webElementGuid>6c6c10e1-268b-414f-9a1b-9f9bd51259cd</webElementGuid>
+      <value>application/json</value>
+      <webElementGuid>60723748-e15e-4a5c-b3f8-1a0c76a3534a</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
+      <name>Authorization</name>
       <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>6cecc637-13f4-42ed-8f3c-40330602b488</webElementGuid>
+      <value>Bearer NzkwOTI3NDE5NTgyOj+lE78UR8Hm4ch73XP+Zaj9HtI5</value>
+      <webElementGuid>af61a98d-ed29-4d90-a477-f28aeb49082f</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.6.8</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>${url}/rest/zapi/latest/execution/${id}/execute</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${url}/rest/api/2/issue/${issueKey}/comment</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -57,16 +57,16 @@
    <variables>
       <defaultValue>GlobalVariable.Url_Zephyr</defaultValue>
       <description></description>
-      <id>3ff50734-a455-42fd-993e-f9212ca4ee6e</id>
+      <id>98756704-f73e-4223-a1c3-e87013c92b80</id>
       <masked>false</masked>
       <name>url</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.Zephyr_Id</defaultValue>
+      <defaultValue>GlobalVariable.Zephyr_TestCaseKey</defaultValue>
       <description></description>
-      <id>3e3a8a14-555a-435d-8b1a-ad74330682b8</id>
+      <id>2409373f-e909-4d46-8e4d-20ee566238b8</id>
       <masked>false</masked>
-      <name>id</name>
+      <name>issueKey</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
