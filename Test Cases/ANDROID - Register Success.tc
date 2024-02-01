@@ -32,7 +32,7 @@ Then the correct dialog message should be displayed</comment>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>17ef8148-8ed0-49d0-8d83-ce3d62831946</variableId>
+      <variableId>0e9d02b8-6aa1-4007-b32d-d6178f7b9a6c</variableId>
    </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
@@ -58,8 +58,8 @@ Then the correct dialog message should be displayed</comment>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>17ef8148-8ed0-49d0-8d83-ce3d62831946</id>
+      <id>0e9d02b8-6aa1-4007-b32d-d6178f7b9a6c</id>
       <masked>false</masked>
-      <name>Contoh</name>
+      <name>PlatformName</name>
    </variable>
 </TestCaseEntity>

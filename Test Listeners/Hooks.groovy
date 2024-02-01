@@ -29,51 +29,51 @@ class Hooks {
 	 * Executes before every test case starts.
 	 * @param testCaseContext related information of the executed test case.
 	 */
-	@BeforeTestCase
-	def sampleBeforeTestCase(TestCaseContext testCaseContext) {
-		TestCase testCase = findTestCase(testCaseContext.getTestCaseId())
-		GlobalVariable.Zephyr_TestCaseKey=testCase.getName().split("_")[0]
-		GlobalVariable.Device_Name=testCase.getName().split("_")[2]
-		println(GlobalVariable.Zephyr_TestCaseKey)
-		println(GlobalVariable.Device_Name)
-		Object getId = WS.sendRequest(findTestObject('Object Repository/Zephyr/Get ID'))
-		// Parse JSON
-		def jsonSlurper = new JsonSlurper()
-		def json = jsonSlurper.parseText(getId.getResponseText())
-		
-		// Extract ID from JSON
-		def executionId = json.executions[0].execution.id
-		
-		GlobalVariable.Zephyr_Id = executionId
-		println(GlobalVariable.Zephyr_Id)
-		
-		
-	}
-	
-	
-	@AfterTestCase
-	def sampleAfterTestCase(TestCaseContext testCaseContext) {
-//		AppiumDriver<?> driver = MobileDriverFactory.getDriver()
-//
-		
-		//Set Zephyr Status
-		if (testCaseContext.getTestCaseStatus()=="PASSED") {
-				GlobalVariable.Zephyr_StatusName=1
-				WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Comment - Passed'))
-			}
-		else if (testCaseContext.getTestCaseStatus()=="FAILED" || testCaseContext.getTestCaseStatus()=="ERROR") {
-				GlobalVariable.Zephyr_StatusName=2
-				WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Comment - Failed'))
-		}
-//		else (testCaseContext.getTestCaseStatus()=="ERROR")
+//	@BeforeTestCase
+//	def sampleBeforeTestCase(TestCaseContext testCaseContext) {
+//		TestCase testCase = findTestCase(testCaseContext.getTestCaseId())
+//		GlobalVariable.Zephyr_TestCaseKey=testCase.getName().split("_")[0]
+//		GlobalVariable.Device_Name=testCase.getName().split("_")[2]
+//		println(GlobalVariable.Zephyr_TestCaseKey)
+//		println(GlobalVariable.Device_Name)
+//		Object getId = WS.sendRequest(findTestObject('Object Repository/Zephyr/Get ID'))
+//		// Parse JSON
+//		def jsonSlurper = new JsonSlurper()
+//		def json = jsonSlurper.parseText(getId.getResponseText())
+//		
+//		// Extract ID from JSON
+//		def executionId = json.executions[0].execution.id
+//		
+//		GlobalVariable.Zephyr_Id = executionId
+//		println(GlobalVariable.Zephyr_Id)
+//		
+//		
+//	}
+//	
+//	
+//	@AfterTestCase
+//	def sampleAfterTestCase(TestCaseContext testCaseContext) {
+////		AppiumDriver<?> driver = MobileDriverFactory.getDriver()
+////
+//		
+//		//Set Zephyr Status
+//		if (testCaseContext.getTestCaseStatus()=="PASSED") {
+//				GlobalVariable.Zephyr_StatusName=1
+//				WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Comment - Passed'))
+//			}
+//		else if (testCaseContext.getTestCaseStatus()=="FAILED" || testCaseContext.getTestCaseStatus()=="ERROR") {
 //				GlobalVariable.Zephyr_StatusName=2
-			
-		//Call API to Push Result to Zephyr by creating Test case execution
-		WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Status'))
+//				WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Comment - Failed'))
+//		}
+////		else (testCaseContext.getTestCaseStatus()=="ERROR")
+////				GlobalVariable.Zephyr_StatusName=2
+//			
+//		//Call API to Push Result to Zephyr by creating Test case execution
+//		WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Status'))
 		
 		
 		
 		
 		//AppiumDriverManager.closeDriver()
-	}
+//	}
 }

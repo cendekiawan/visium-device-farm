@@ -28,6 +28,12 @@ Then the correct dialog message should be displayed</comment>
       <value></value>
       <variableId>b5e5bdc4-352c-4a26-a9bd-945d3630fc1d</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bdf8c988-5dc6-4818-a2c0-49df2d690b35</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
@@ -48,5 +54,12 @@ Then the correct dialog message should be displayed</comment>
       <id>b5e5bdc4-352c-4a26-a9bd-945d3630fc1d</id>
       <masked>false</masked>
       <name>PlatformVersion</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>bdf8c988-5dc6-4818-a2c0-49df2d690b35</id>
+      <masked>false</masked>
+      <name>PlatformName</name>
    </variable>
 </TestCaseEntity>

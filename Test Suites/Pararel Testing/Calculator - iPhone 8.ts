@@ -23,7 +23,7 @@
             <iterationType>SPECIFIC</iterationType>
             <value>7</value>
          </iterationEntity>
-         <testDataId>Data Files/User Matrix</testDataId>
+         <testDataId>Data Files/Device Farm</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -43,6 +43,12 @@
          <type>DATA_COLUMN</type>
          <value>PlatformVersion</value>
          <variableId>b5e5bdc4-352c-4a26-a9bd-945d3630fc1d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>bdf8c988-5dc6-4818-a2c0-49df2d690b35</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

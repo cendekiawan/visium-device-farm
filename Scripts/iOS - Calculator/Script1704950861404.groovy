@@ -25,26 +25,16 @@ import io.appium.java_client.MobileElement as MobileElement
 import java.net.URL as URL
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import io.appium.java_client.remote.MobileCapabilityType
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import visium.SetCapability
 
-CustomKeywords.'visium.SetCapability.iOS'(DeviceName, UdId, PlatformVersion)
+SetCapability.startApplication(DeviceName, UdId, PlatformVersion, PlatformName)
+
+Mobile.delay(5)
 
 Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Angka 8'), 10)
 
 Mobile.delay(5)
 
 Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Angka 8'), 10)
-
-Mobile.delay(5)
-
-Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Kali'), 10)
-
-Mobile.delay(5)
-
-Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Angka 2'), 10)
-
-Mobile.delay(5)
-
-Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Total'), 10)
-
-Mobile.delay(5)

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description></description>
-   <name>User Matrix</name>
+   <name>Device Farm</name>
    <tag></tag>
    <connectionProperties/>
    <containsHeaders>true</containsHeaders>
@@ -23,30 +23,31 @@
    <data>iPhone+8 52faf304d5147795cac1003572fb3b50d74ef5d4 15.0.2 iOS iPhone+8</data>
    <data>iPhone+XR 00008020-0014458A14BA002E 17.3 iOS iPhone+XR</data>
    <data>iPhone+15 00008120-000914192650A01E 17.1 iOS iPhone+15</data>
+   <data>iPhone+6s ba17673a69babbfb4caf35daee88e2090a7215d8 15.7.3 iOS iPhone+6s</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
       <name>DeviceName</name>
-      <size>14</size>
+      <size>15</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>1</columnIndex>
       <name>UdId</name>
-      <size>14</size>
+      <size>15</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>2</columnIndex>
       <name>PlatformVersion</name>
-      <size>14</size>
+      <size>15</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>3</columnIndex>
-      <name>OS</name>
-      <size>14</size>
+      <name>PlatformName</name>
+      <size>15</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>4</columnIndex>
-      <name>Phone Name</name>
-      <size>14</size>
+      <name>PhoneName</name>
+      <size>15</size>
    </internalDataColumns>
    <isInternalPath>false</isInternalPath>
    <query></query>

@@ -12,28 +12,43 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>46677dc6-e24d-4b7a-93aa-6514a0c798b9</testSuiteGuid>
    <testCaseLink>
-      <guid>6648025c-6309-426c-8182-6acc37cda57e</guid>
+      <guid>cf74c8be-9359-4add-9d25-915a6357a9b7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/iOS/Calculator - Apple iPhone XR</testCaseId>
+      <testCaseId>Test Cases/iOS - Calculator</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>5c1ae631-473f-4074-95ac-7863a65164a0</id>
+         <iterationEntity>
+            <iterationType>SPECIFIC</iterationType>
+            <value>13</value>
+         </iterationEntity>
+         <testDataId>Data Files/Device Farm</testDataId>
+      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>6ea5432a-a5b2-46f8-97a7-837cb5f6a121</variableId>
+         <testDataLinkId>5c1ae631-473f-4074-95ac-7863a65164a0</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>DeviceName</value>
+         <variableId>1933942f-2578-496b-8bdb-137869bf5d1c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>5c1ae631-473f-4074-95ac-7863a65164a0</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>UdId</value>
+         <variableId>873099d2-d533-408f-ad92-7db0225373be</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>5c1ae631-473f-4074-95ac-7863a65164a0</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>PlatformVersion</value>
+         <variableId>b5e5bdc4-352c-4a26-a9bd-945d3630fc1d</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>6d498e44-8cb5-4676-8743-962cd7040ecc</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>6dff0559-0282-4ccf-905c-04e7c36a4401</variableId>
+         <variableId>bdf8c988-5dc6-4818-a2c0-49df2d690b35</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

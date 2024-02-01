@@ -12,28 +12,43 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>7b8a9d5e-1fca-46f4-a1c2-32771fab61a9</testSuiteGuid>
    <testCaseLink>
-      <guid>60a2652d-7aff-44c1-bb20-203cfab5eef8</guid>
+      <guid>99fa2db9-fcf8-4a72-a761-db0fccc9df7a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/iOS/Calculator - Apple iPhone 6s</testCaseId>
+      <testCaseId>Test Cases/iOS - Calculator</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>c9befbcc-3908-4e0b-a9dd-66ef1b42f070</id>
+         <iterationEntity>
+            <iterationType>SPECIFIC</iterationType>
+            <value>15</value>
+         </iterationEntity>
+         <testDataId>Data Files/Device Farm</testDataId>
+      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>8a69cbc8-0c2d-4e72-83a2-3214f005d6f7</variableId>
+         <testDataLinkId>c9befbcc-3908-4e0b-a9dd-66ef1b42f070</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>DeviceName</value>
+         <variableId>1933942f-2578-496b-8bdb-137869bf5d1c</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>352af17b-8c9e-4b0e-9c5b-6a9edfa44fef</variableId>
+         <testDataLinkId>c9befbcc-3908-4e0b-a9dd-66ef1b42f070</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>UdId</value>
+         <variableId>873099d2-d533-408f-ad92-7db0225373be</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>effa2123-cf59-4a6a-afd3-8bd56bbfd7d4</variableId>
+         <testDataLinkId>c9befbcc-3908-4e0b-a9dd-66ef1b42f070</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>PlatformVersion</value>
+         <variableId>b5e5bdc4-352c-4a26-a9bd-945d3630fc1d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c9befbcc-3908-4e0b-a9dd-66ef1b42f070</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>PlatformName</value>
+         <variableId>bdf8c988-5dc6-4818-a2c0-49df2d690b35</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

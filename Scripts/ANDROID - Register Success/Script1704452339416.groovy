@@ -27,12 +27,13 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import visium.SetCapability
 
-CustomKeywords.'visium.SetCapability.android'(DeviceName, UdId, PlatformVersion)
+SetCapability.startApplication(DeviceName, UdId, PlatformVersion, PlatformName)
 
 Mobile.tap(findTestObject('Object Repository/Demo/Add - Button'), 10)
 
-Mobile.setText(findTestObject('Object Repository/Demo/Name - Text Input'), Contoh, 10)
+Mobile.setText(findTestObject('Object Repository/Demo/Name - Text Input'), "Bank Mandiri Automation", 10)
 
 Mobile.setText(findTestObject('Object Repository/Demo/Phone - Text Input'), '0857623527283', 10)
 
@@ -44,6 +45,6 @@ Mobile.setText(findTestObject('Object Repository/Demo/Alternate Email - Text Inp
 
 Mobile.tap(findTestObject('Object Repository/Demo/Save - Button'), 10)
 
-Mobile.delay(5)
-
-Mobile.closeApplication()
+//Mobile.delay(5)
+//
+//Mobile.closeApplication()
