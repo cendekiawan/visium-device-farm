@@ -32,14 +32,11 @@ import com.kms.katalon.core.testobject.RequestObject
 
 import io.appium.java_client.AppiumDriver
 import io.appium.java_client.MobileElement
+import com.kms.katalon.core.appium.driver.AppiumDriverManager
 
 
 class Hooks {
-			KeywordLogger log = new KeywordLogger()
-	/**
-	 * Executes before every test case starts.
-	 * @param testCaseContext related information of the executed test case.
-	 */
+
 	@BeforeTestCase
 	def sampleBeforeTestCase(TestCaseContext testCaseContext) {
 		TestCase testCase = findTestCase(testCaseContext.getTestCaseId())
@@ -64,27 +61,22 @@ class Hooks {
 	
 	@AfterTestCase
 	def sampleAfterTestCase(TestCaseContext testCaseContext) {
-//		AppiumDriver<?> driver = MobileDriverFactory.getDriver()
-//
-		
+
 		//Set Zephyr Status
+		GlobalVariable.Status_Test_Case = testCaseContext.getTestCaseStatus()
 		if (testCaseContext.getTestCaseStatus()=="PASSED") {
 				GlobalVariable.Zephyr_StatusName=1
 				WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Comment - Passed'))
 			}
 		else if (testCaseContext.getTestCaseStatus()=="FAILED" || testCaseContext.getTestCaseStatus()=="ERROR") {
 				GlobalVariable.Zephyr_StatusName=2
-				String SS = Mobile.takeScreenshot("Error-Screenshot.png")
+				String SS = Mobile.takeScreenshot("$GlobalVariable.Status_Test_Case-"+"$GlobalVariable.Device_Name"+".png")
 				GlobalVariable.G_attachment = SS
 				WS.sendRequest(findTestObject('Object Repository/Zephyr/Create_attachment'))
 				WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Comment - Failed'))
 		}
-		
 		WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Status'))
-		
-		
-		
-		
-		//AppiumDriverManager.closeDriver()
+
+		AppiumDriverManager.closeDriver()
 	}
 }

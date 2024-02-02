@@ -20,7 +20,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;body\&quot;: \&quot;Automation Failed or Error, !${GlobalVariable.G_attachment}|thumbnail!\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;body\&quot;: \&quot;*AUTOMATION* - ${GlobalVariable.Device_Name} -  {color:red}*${GlobalVariable.Status_Test_Case}*{color}!${GlobalVariable.G_attachment}|thumbnail!\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>

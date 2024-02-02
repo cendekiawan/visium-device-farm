@@ -59,8 +59,8 @@ public class SetCapability {
 		//		println(GlobalVariable.appID)
 
 		DesiredCapabilities capabilities = new DesiredCapabilities()
-		String webDriverVisiumFarmHub = "https://farmdemo.visiumlabs.com/wd/hub"				
-							
+		String webDriverVisiumFarmHub = "https://farmdemo.visiumlabs.com/wd/hub"
+
 
 		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, DeviceName)
 		capabilities.setCapability(MobileCapabilityType.UDID, UdId)
@@ -68,7 +68,7 @@ public class SetCapability {
 		capabilities.setCapability(MobileCapabilityType.NO_RESET, true)
 		capabilities.setCapability(MobileCapabilityType.FULL_RESET, false)
 		capabilities.setCapability("vf:accessKey", "brian:3b7e2401-0e46-4efb-9a06-193c1086b797")
-				
+
 		String os = PlatformName
 		println(os)
 

@@ -49,4 +49,9 @@
       <initValue>''</initValue>
       <name>G_attachment</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>Status_Test_Case</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
