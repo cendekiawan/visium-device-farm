@@ -11,29 +11,4 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>8b08da90-9774-4453-9f7d-1aa26103c860</testSuiteGuid>
-   <testCaseLink>
-      <guid>6e1e9a56-49a1-4e1a-bba3-ff841464b181</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Android/Register Success - Xiaomi MI 8 Lite</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>3ca1b0fc-9761-4cf0-984c-5d52789697fa</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>5ac2eb70-7160-4087-b02f-c902e41186f0</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>6ccca1a3-a3b5-4abd-b28e-6bc604dc280b</variableId>
-      </variableLink>
-   </testCaseLink>
 </TestSuiteEntity>

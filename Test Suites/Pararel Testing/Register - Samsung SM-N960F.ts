@@ -11,29 +11,4 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>b86d6915-2b3a-44f3-b18c-855f66929f2d</testSuiteGuid>
-   <testCaseLink>
-      <guid>7df7b4c8-11bb-46b6-8c9a-a2682328f711</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Android/Register Success - Samsung SM-N960F</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>e3b4ec2d-79c0-4f61-a3ec-0cbb5e588e7d</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>5a765137-12db-4a82-ad4a-53a7a6f151c0</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>cf7db237-799a-48fd-852b-b8fc8896c191</variableId>
-      </variableLink>
-   </testCaseLink>
 </TestSuiteEntity>

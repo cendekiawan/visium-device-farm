@@ -24,30 +24,33 @@
    <data>iPhone+XR 00008020-0014458A14BA002E 17.3 iOS iPhone+XR</data>
    <data>iPhone+15 00008120-000914192650A01E 17.1 iOS iPhone+15</data>
    <data>iPhone+6s ba17673a69babbfb4caf35daee88e2090a7215d8 15.7.3 iOS iPhone+6s</data>
+   <data>iPhone+5s 2b9c4327ae1d7266c8c374ccdb20dcbf25e5859e 12.1.4 iOS iPhone+5s</data>
+   <data>%09iPhone+8+Plus 4488f63b32e9e5bc1b42799eff3f2cbe0d01936c 15.4 iOS %09iPhone+8+Plus</data>
+   <data>iPhone+6 9024a28917d38825b135091bcca878aec226a245 12.4.1 iOS iPhone+6</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
       <name>DeviceName</name>
-      <size>15</size>
+      <size>18</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>1</columnIndex>
       <name>UdId</name>
-      <size>15</size>
+      <size>18</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>2</columnIndex>
       <name>PlatformVersion</name>
-      <size>15</size>
+      <size>18</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>3</columnIndex>
       <name>PlatformName</name>
-      <size>15</size>
+      <size>18</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>4</columnIndex>
       <name>PhoneName</name>
-      <size>15</size>
+      <size>18</size>
    </internalDataColumns>
    <isInternalPath>false</isInternalPath>
    <query></query>

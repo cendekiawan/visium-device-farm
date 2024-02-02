@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Register - Casper VIA_F1</name>
+   <name>Calculator - iPhone 6</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,45 +10,45 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>7de44a5b-58e2-4957-8dcd-f700b48827bd</testSuiteGuid>
+   <testSuiteGuid>625538c9-72be-46b9-b6eb-ce5785667968</testSuiteGuid>
    <testCaseLink>
-      <guid>2cf7a589-6be8-4945-b2e5-620d815c806e</guid>
+      <guid>401bbdbe-44f9-487f-8d71-63c2fd26cc74</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Android/ANDROID - Register Success</testCaseId>
+      <testCaseId>Test Cases/iOS/iOS - Calculator</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>19b291de-25b0-4176-974d-93848da1871c</id>
+         <id>d5ec4472-9597-447c-aff5-bb38c3fda72d</id>
          <iterationEntity>
             <iterationType>SPECIFIC</iterationType>
-            <value>7</value>
+            <value>18</value>
          </iterationEntity>
          <testDataId>Data Files/Device Farm</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId>19b291de-25b0-4176-974d-93848da1871c</testDataLinkId>
+         <testDataLinkId>d5ec4472-9597-447c-aff5-bb38c3fda72d</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>DeviceName</value>
-         <variableId>9fb33da1-8c11-415f-93a7-6fd60d7af839</variableId>
+         <variableId>1933942f-2578-496b-8bdb-137869bf5d1c</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>19b291de-25b0-4176-974d-93848da1871c</testDataLinkId>
+         <testDataLinkId>d5ec4472-9597-447c-aff5-bb38c3fda72d</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>UdId</value>
-         <variableId>13bd77ca-65d8-462b-acc0-ff53b47baf71</variableId>
+         <variableId>873099d2-d533-408f-ad92-7db0225373be</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>19b291de-25b0-4176-974d-93848da1871c</testDataLinkId>
+         <testDataLinkId>d5ec4472-9597-447c-aff5-bb38c3fda72d</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>PlatformVersion</value>
-         <variableId>ed39d827-a5bd-4ddf-9282-644e8a4c41b6</variableId>
+         <variableId>b5e5bdc4-352c-4a26-a9bd-945d3630fc1d</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>19b291de-25b0-4176-974d-93848da1871c</testDataLinkId>
+         <testDataLinkId>d5ec4472-9597-447c-aff5-bb38c3fda72d</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>PlatformName</value>
-         <variableId>0e9d02b8-6aa1-4007-b32d-d6178f7b9a6c</variableId>
+         <variableId>bdf8c988-5dc6-4818-a2c0-49df2d690b35</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

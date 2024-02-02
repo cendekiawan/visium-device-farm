@@ -27,30 +27,13 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import visium.SetCapability
 
-String webDriverVisiumFarmHub = "https://farmdemo.visiumlabs.com/wd/hub"
-DesiredCapabilities capabilities = new DesiredCapabilities()
-
-capabilities.setCapability("deviceName", "SM-G955F")
-capabilities.setCapability("automationName", "uiautomator2")
-capabilities.setCapability("udid", "ce12160ca458b73003")
-capabilities.setCapability("platformName", "ANDROID")
-capabilities.setCapability("platformVersion", "9")
-capabilities.setCapability("noReset", true)
-capabilities.setCapability("vf:accessKey", "brian:3b7e2401-0e46-4efb-9a06-193c1086b797")
-//capabilities.setCapability("vf:appId", "${GlobalVariable.appID}")
-capabilities.setCapability("appium:appPackage", "com.rimhimstudios.register")
-capabilities.setCapability("appium:appActivity", "com.rimhimstudios.register.MainActivity")
-capabilities.setCapability("vf:saveSession", true)
-capabilities.setCapability("vf:saveVideoRecord", true)
-capabilities.setCapability("vf:saveAppiumLog", true)
-capabilities.setCapability("vf:saveDeviceLog", true)
-capabilities.setCapability("vf:sessionName", "Android Automation DDL")
-AppiumDriverManager.createMobileDriver(MobileDriverType.ANDROID_DRIVER, capabilities, new URL(webDriverVisiumFarmHub))
+SetCapability.startApplication(DeviceName, UdId, PlatformVersion, PlatformName)
 
 Mobile.tap(findTestObject('Object Repository/Demo/Add - Button'), 10)
 
-Mobile.setText(findTestObject('Object Repository/Demo/Name - Text Input'), 'DDL AUTOMATION', 10)
+Mobile.setText(findTestObject('Object Repository/Demo/Name - Text Input'), "Bank Mandiri Automation", 10)
 
 Mobile.setText(findTestObject('Object Repository/Demo/Phone - Text Input'), '0857623527283', 10)
 
@@ -61,7 +44,3 @@ Mobile.setText(findTestObject('Object Repository/Demo/Email - Text Input'), 'AUT
 Mobile.setText(findTestObject('Object Repository/Demo/Alternate Email - Text Input'), 'ROBOT@DDL.COM', 10)
 
 Mobile.tap(findTestObject('Object Repository/Demo/Save - Button'), 10)
-
-Mobile.delay(5)
-
-Mobile.closeApplication()

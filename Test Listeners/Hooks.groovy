@@ -22,13 +22,12 @@ import com.kms.katalon.core.annotation.AfterTestSuite
 import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.context.TestSuiteContext
 import groovy.json.JsonSlurper
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
+import com.kms.katalon.core.appium.driver.AppiumDriverManager
 
 
 class Hooks {
-	/**
-	 * Executes before every test case starts.
-	 * @param testCaseContext related information of the executed test case.
-	 */
+	
 //	@BeforeTestCase
 //	def sampleBeforeTestCase(TestCaseContext testCaseContext) {
 //		TestCase testCase = findTestCase(testCaseContext.getTestCaseId())
@@ -51,11 +50,10 @@ class Hooks {
 //	}
 //	
 //	
-//	@AfterTestCase
-//	def sampleAfterTestCase(TestCaseContext testCaseContext) {
-////		AppiumDriver<?> driver = MobileDriverFactory.getDriver()
-////
-//		
+	@AfterTestCase
+	def sampleAfterTestCase(TestCaseContext testCaseContext) {
+//		AppiumDriver<?> driver = MobileDriverFactory.getDriver()
+
 //		//Set Zephyr Status
 //		if (testCaseContext.getTestCaseStatus()=="PASSED") {
 //				GlobalVariable.Zephyr_StatusName=1
@@ -74,6 +72,6 @@ class Hooks {
 		
 		
 		
-		//AppiumDriverManager.closeDriver()
-//	}
+		AppiumDriverManager.closeDriver()
+	}
 }

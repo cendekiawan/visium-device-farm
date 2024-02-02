@@ -11,29 +11,4 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>bcd2cc71-cbf6-4ace-9111-072df0f24b24</testSuiteGuid>
-   <testCaseLink>
-      <guid>377842ad-674f-42df-9928-a43de75e6e26</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Android/Register Success - Samsung SM-J610F</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>c37cbf3a-95c2-4155-8084-c62c01271bd3</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>b004c291-159e-405f-aa9f-3404edc98c7a</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>ac9081dc-a48c-4ec6-832f-6d31373e6d10</variableId>
-      </variableLink>
-   </testCaseLink>
 </TestSuiteEntity>

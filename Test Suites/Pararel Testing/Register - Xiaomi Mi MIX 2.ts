@@ -11,29 +11,4 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>10025eed-ede8-40a5-8c3b-71a4c06fed17</testSuiteGuid>
-   <testCaseLink>
-      <guid>baf97d88-8f28-4ce5-97bc-d780c6cade11</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Android/Register Success - Xiaomi Mi MIX 2</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>dddf7664-269c-4f09-9b62-35eaead763c3</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>9cc94bce-b047-4080-899e-b637ee4e594f</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>b775373c-db2d-4769-99d4-45f59357e018</variableId>
-      </variableLink>
-   </testCaseLink>
 </TestSuiteEntity>
