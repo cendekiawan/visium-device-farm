@@ -15,7 +15,7 @@
       <guid>43cb2966-0a0e-4264-b0bd-755d62a0be81</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Android/DOFF-11217_Register Success_Casper VIA F1</testCaseId>
+      <testCaseId>Test Cases/Android/DOFF-11217_Register Failed_Casper VIA F1</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
