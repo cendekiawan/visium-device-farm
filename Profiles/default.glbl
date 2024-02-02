@@ -39,4 +39,14 @@
       <initValue>''</initValue>
       <name>Device_Name</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>ErrorLog</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>G_attachment</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

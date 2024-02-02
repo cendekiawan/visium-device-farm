@@ -27,7 +27,7 @@ import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import groovy.json.JsonSlurper
 
-WS.delay(3)a
+WS.delay(3)
 
 
 

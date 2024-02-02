@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>- An automation script to help user getting started with Mobile automation testing.
+- Script Content: Click &quot;START ALARM SERVICE&quot; and click &quot;STOP ALARM SERVICE&quot;, verify alert show is correct</description>
+   <name>Register Success - Casper VIA_F1</name>
+   <tag></tag>
+   <comment>Story: Verify correct alarm message
+Given that user has started an application
+And he navigates the application to Activity form
+When he taps on the Custom Dialog button
+Then the correct dialog message should be displayed</comment>
+   <testCaseGuid>ecf879a0-dd60-4420-94c9-3e49380a371c</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>cdde2d24-9088-4a8f-a785-8223b5a295fb</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c9c845d6-67a0-4a0b-a1ea-1a4cb8037f19</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1f2820d2-b771-4073-b3b0-702ce60f5a1b</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestData(null).getValue(1, 1)</defaultValue>
+      <description></description>
+      <id>cdde2d24-9088-4a8f-a785-8223b5a295fb</id>
+      <masked>false</masked>
+      <name>DeviceName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c9c845d6-67a0-4a0b-a1ea-1a4cb8037f19</id>
+      <masked>false</masked>
+      <name>UdId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>1f2820d2-b771-4073-b3b0-702ce60f5a1b</id>
+      <masked>false</masked>
+      <name>PlatformVersion</name>
+   </variable>
+</TestCaseEntity>
