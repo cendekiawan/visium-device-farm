@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Calculator - iPhone 6</name>
+   <name>Calculator_iPhone XR</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,42 +10,42 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>625538c9-72be-46b9-b6eb-ce5785667968</testSuiteGuid>
+   <testSuiteGuid>46677dc6-e24d-4b7a-93aa-6514a0c798b9</testSuiteGuid>
    <testCaseLink>
-      <guid>401bbdbe-44f9-487f-8d71-63c2fd26cc74</guid>
+      <guid>cf74c8be-9359-4add-9d25-915a6357a9b7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/iOS/iOS - Calculator</testCaseId>
+      <testCaseId>Test Cases/iOS/DOFF-11217_Calculator</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>d5ec4472-9597-447c-aff5-bb38c3fda72d</id>
+         <id>5c1ae631-473f-4074-95ac-7863a65164a0</id>
          <iterationEntity>
             <iterationType>SPECIFIC</iterationType>
-            <value>18</value>
+            <value>13</value>
          </iterationEntity>
          <testDataId>Data Files/Device Farm</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId>d5ec4472-9597-447c-aff5-bb38c3fda72d</testDataLinkId>
+         <testDataLinkId>5c1ae631-473f-4074-95ac-7863a65164a0</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>DeviceName</value>
          <variableId>1933942f-2578-496b-8bdb-137869bf5d1c</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>d5ec4472-9597-447c-aff5-bb38c3fda72d</testDataLinkId>
+         <testDataLinkId>5c1ae631-473f-4074-95ac-7863a65164a0</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>UdId</value>
          <variableId>873099d2-d533-408f-ad92-7db0225373be</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>d5ec4472-9597-447c-aff5-bb38c3fda72d</testDataLinkId>
+         <testDataLinkId>5c1ae631-473f-4074-95ac-7863a65164a0</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>PlatformVersion</value>
          <variableId>b5e5bdc4-352c-4a26-a9bd-945d3630fc1d</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>d5ec4472-9597-447c-aff5-bb38c3fda72d</testDataLinkId>
+         <testDataLinkId>5c1ae631-473f-4074-95ac-7863a65164a0</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>PlatformName</value>
          <variableId>bdf8c988-5dc6-4818-a2c0-49df2d690b35</variableId>

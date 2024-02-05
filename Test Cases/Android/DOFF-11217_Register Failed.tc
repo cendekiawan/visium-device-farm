@@ -2,64 +2,51 @@
 <TestCaseEntity>
    <description>- An automation script to help user getting started with Mobile automation testing.
 - Script Content: Click &quot;START ALARM SERVICE&quot; and click &quot;STOP ALARM SERVICE&quot;, verify alert show is correct</description>
-   <name>ANDROID - Register Success</name>
+   <name>DOFF-11217_Register Failed</name>
    <tag></tag>
    <comment>Story: Verify correct alarm message
 Given that user has started an application
 And he navigates the application to Activity form
 When he taps on the Custom Dialog button
 Then the correct dialog message should be displayed</comment>
-   <testCaseGuid>340c4922-c233-4767-920e-81b37909cc99</testCaseGuid>
+   <testCaseGuid>b4ab1884-6b6a-47c3-ab66-db43900c4e21</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>9fb33da1-8c11-415f-93a7-6fd60d7af839</variableId>
+      <variableId>7ac427d0-9f59-4683-97cd-b2c05c5cff76</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>13bd77ca-65d8-462b-acc0-ff53b47baf71</variableId>
+      <variableId>2d0183c1-c89c-484f-b89a-525a92bdbd4f</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>ed39d827-a5bd-4ddf-9282-644e8a4c41b6</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>0e9d02b8-6aa1-4007-b32d-d6178f7b9a6c</variableId>
+      <variableId>c91baf8f-81b4-4e3f-944f-0ee17df3c4c8</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>findTestData(null).getValue(1, 1)</defaultValue>
       <description></description>
-      <id>9fb33da1-8c11-415f-93a7-6fd60d7af839</id>
+      <id>7ac427d0-9f59-4683-97cd-b2c05c5cff76</id>
       <masked>false</masked>
       <name>DeviceName</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>13bd77ca-65d8-462b-acc0-ff53b47baf71</id>
+      <id>2d0183c1-c89c-484f-b89a-525a92bdbd4f</id>
       <masked>false</masked>
       <name>UdId</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>ed39d827-a5bd-4ddf-9282-644e8a4c41b6</id>
+      <id>c91baf8f-81b4-4e3f-944f-0ee17df3c4c8</id>
       <masked>false</masked>
       <name>PlatformVersion</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>0e9d02b8-6aa1-4007-b32d-d6178f7b9a6c</id>
-      <masked>false</masked>
-      <name>PlatformName</name>
    </variable>
 </TestCaseEntity>

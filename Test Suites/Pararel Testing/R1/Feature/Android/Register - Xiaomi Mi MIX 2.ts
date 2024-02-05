@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Calculator - iPhone 8 Plus</name>
+   <name>Register - Xiaomi Mi MIX 2</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
-   <numberOfRerun>0</numberOfRerun>
+   <numberOfRerun>3</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>2e865c78-02c9-4d76-9b4b-d971aed86e4c</testSuiteGuid>
+   <testSuiteGuid>10025eed-ede8-40a5-8c3b-71a4c06fed17</testSuiteGuid>
    <testCaseLink>
-      <guid>b8e45a06-47b0-4836-a7c9-8a665371e521</guid>
+      <guid>9181b3f0-ee7d-4ca4-a65e-d3c0d4c8c12e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/iOS/iOS - Calculator</testCaseId>
+      <testCaseId>Test Cases/Android/DOFF-11217_Register Success</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>213f027b-e0bb-42cd-bd7c-3147df523b7a</id>
+         <id>f9a5863c-64b2-4f2f-94f5-81bd660695ae</id>
          <iterationEntity>
             <iterationType>SPECIFIC</iterationType>
-            <value>17</value>
+            <value>6</value>
          </iterationEntity>
          <testDataId>Data Files/Device Farm</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId>213f027b-e0bb-42cd-bd7c-3147df523b7a</testDataLinkId>
+         <testDataLinkId>f9a5863c-64b2-4f2f-94f5-81bd660695ae</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>DeviceName</value>
-         <variableId>1933942f-2578-496b-8bdb-137869bf5d1c</variableId>
+         <variableId>9fb33da1-8c11-415f-93a7-6fd60d7af839</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>213f027b-e0bb-42cd-bd7c-3147df523b7a</testDataLinkId>
+         <testDataLinkId>f9a5863c-64b2-4f2f-94f5-81bd660695ae</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>UdId</value>
-         <variableId>873099d2-d533-408f-ad92-7db0225373be</variableId>
+         <variableId>13bd77ca-65d8-462b-acc0-ff53b47baf71</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>213f027b-e0bb-42cd-bd7c-3147df523b7a</testDataLinkId>
+         <testDataLinkId>f9a5863c-64b2-4f2f-94f5-81bd660695ae</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>PlatformVersion</value>
-         <variableId>b5e5bdc4-352c-4a26-a9bd-945d3630fc1d</variableId>
+         <variableId>ed39d827-a5bd-4ddf-9282-644e8a4c41b6</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>213f027b-e0bb-42cd-bd7c-3147df523b7a</testDataLinkId>
+         <testDataLinkId>f9a5863c-64b2-4f2f-94f5-81bd660695ae</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>PlatformName</value>
-         <variableId>bdf8c988-5dc6-4818-a2c0-49df2d690b35</variableId>
+         <variableId>0e9d02b8-6aa1-4007-b32d-d6178f7b9a6c</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

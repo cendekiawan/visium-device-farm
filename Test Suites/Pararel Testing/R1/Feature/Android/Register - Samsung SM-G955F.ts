@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Register - Samsung SM-G955F</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>3</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>d869893d-556a-4704-8162-258ef181d9fa</testSuiteGuid>
+   <testCaseLink>
+      <guid>f403207a-8035-443e-916b-f4877dd24965</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Android/DOFF-11217_Register Success</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>f6cebba7-a790-4499-ad6a-6b75e215816a</id>
+         <iterationEntity>
+            <iterationType>SPECIFIC</iterationType>
+            <value>4</value>
+         </iterationEntity>
+         <testDataId>Data Files/Device Farm</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>f6cebba7-a790-4499-ad6a-6b75e215816a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>DeviceName</value>
+         <variableId>9fb33da1-8c11-415f-93a7-6fd60d7af839</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>f6cebba7-a790-4499-ad6a-6b75e215816a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>UdId</value>
+         <variableId>13bd77ca-65d8-462b-acc0-ff53b47baf71</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>f6cebba7-a790-4499-ad6a-6b75e215816a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>PlatformVersion</value>
+         <variableId>ed39d827-a5bd-4ddf-9282-644e8a4c41b6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>f6cebba7-a790-4499-ad6a-6b75e215816a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>PlatformName</value>
+         <variableId>0e9d02b8-6aa1-4007-b32d-d6178f7b9a6c</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

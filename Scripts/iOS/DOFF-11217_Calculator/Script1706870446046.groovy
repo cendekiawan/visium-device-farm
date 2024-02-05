@@ -37,6 +37,4 @@ Mobile.delay(5)
 
 Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Angka 8'), 10)
 
-Mobile.delay(5)
-
 Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Angka 8'), 10)

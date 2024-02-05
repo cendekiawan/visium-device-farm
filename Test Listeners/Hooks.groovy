@@ -33,6 +33,7 @@ import com.kms.katalon.core.testobject.RequestObject
 import io.appium.java_client.AppiumDriver
 import io.appium.java_client.MobileElement
 import com.kms.katalon.core.appium.driver.AppiumDriverManager
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
 
 
 class Hooks {
@@ -41,9 +42,7 @@ class Hooks {
 	def sampleBeforeTestCase(TestCaseContext testCaseContext) {
 		TestCase testCase = findTestCase(testCaseContext.getTestCaseId())
 		GlobalVariable.Zephyr_TestCaseKey=testCase.getName().split("_")[0]
-		GlobalVariable.Device_Name=testCase.getName().split("_")[2]
 		println(GlobalVariable.Zephyr_TestCaseKey)
-		println(GlobalVariable.Device_Name)
 		Object getId = WS.sendRequest(findTestObject('Object Repository/Zephyr/Get ID'))
 		// Parse JSON
 		def jsonSlurper = new JsonSlurper()
@@ -63,7 +62,10 @@ class Hooks {
 	def sampleAfterTestCase(TestCaseContext testCaseContext) {
 
 		//Set Zephyr Status
+		AppiumDriver<?> mobileDriver = MobileDriverFactory.getDriver()
 		GlobalVariable.Status_Test_Case = testCaseContext.getTestCaseStatus()
+		GlobalVariable.Device_Name = mobileDriver.getCapabilities().getCapability("appium:deviceName").toString()
+		println(GlobalVariable.Device_Name)
 		if (testCaseContext.getTestCaseStatus()=="PASSED") {
 				GlobalVariable.Zephyr_StatusName=1
 				WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Comment - Passed'))

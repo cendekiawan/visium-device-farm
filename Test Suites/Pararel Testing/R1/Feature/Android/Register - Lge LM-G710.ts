@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Register - Lge LM-G710</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>3</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>8b1aa14a-396c-401d-b344-93568c27c268</testSuiteGuid>
+   <testCaseLink>
+      <guid>81667a67-dc14-4871-92b5-699358e7768a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Android/DOFF-11217_Register Success</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>3a118e55-a864-4c4f-9ccd-726ae435eb2a</id>
+         <iterationEntity>
+            <iterationType>SPECIFIC</iterationType>
+            <value>8</value>
+         </iterationEntity>
+         <testDataId>Data Files/Device Farm</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>3a118e55-a864-4c4f-9ccd-726ae435eb2a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>DeviceName</value>
+         <variableId>9fb33da1-8c11-415f-93a7-6fd60d7af839</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>3a118e55-a864-4c4f-9ccd-726ae435eb2a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>UdId</value>
+         <variableId>13bd77ca-65d8-462b-acc0-ff53b47baf71</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>3a118e55-a864-4c4f-9ccd-726ae435eb2a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>PlatformVersion</value>
+         <variableId>ed39d827-a5bd-4ddf-9282-644e8a4c41b6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>3a118e55-a864-4c4f-9ccd-726ae435eb2a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>PlatformName</value>
+         <variableId>0e9d02b8-6aa1-4007-b32d-d6178f7b9a6c</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

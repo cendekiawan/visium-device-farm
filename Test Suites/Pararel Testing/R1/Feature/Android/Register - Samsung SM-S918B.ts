@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Calculator - iPhone 15</name>
+   <name>Register - Samsung SM-S918B</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
-   <numberOfRerun>0</numberOfRerun>
+   <numberOfRerun>3</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>5f021a56-5411-4082-98f7-cfe18df57e6b</testSuiteGuid>
+   <testSuiteGuid>8b08da90-9774-4453-9f7d-1aa26103c860</testSuiteGuid>
    <testCaseLink>
-      <guid>401bbdbe-44f9-487f-8d71-63c2fd26cc74</guid>
+      <guid>5af6d87a-d9ae-4886-92f5-748188ca0925</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/iOS/iOS - Calculator</testCaseId>
+      <testCaseId>Test Cases/Android/DOFF-11217_Register Success</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>d5ec4472-9597-447c-aff5-bb38c3fda72d</id>
+         <id>f544aec3-176a-4af6-b1dc-3fc68430caad</id>
          <iterationEntity>
             <iterationType>SPECIFIC</iterationType>
-            <value>14</value>
+            <value>11</value>
          </iterationEntity>
          <testDataId>Data Files/Device Farm</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId>d5ec4472-9597-447c-aff5-bb38c3fda72d</testDataLinkId>
+         <testDataLinkId>f544aec3-176a-4af6-b1dc-3fc68430caad</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>DeviceName</value>
-         <variableId>1933942f-2578-496b-8bdb-137869bf5d1c</variableId>
+         <variableId>9fb33da1-8c11-415f-93a7-6fd60d7af839</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>d5ec4472-9597-447c-aff5-bb38c3fda72d</testDataLinkId>
+         <testDataLinkId>f544aec3-176a-4af6-b1dc-3fc68430caad</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>UdId</value>
-         <variableId>873099d2-d533-408f-ad92-7db0225373be</variableId>
+         <variableId>13bd77ca-65d8-462b-acc0-ff53b47baf71</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>d5ec4472-9597-447c-aff5-bb38c3fda72d</testDataLinkId>
+         <testDataLinkId>f544aec3-176a-4af6-b1dc-3fc68430caad</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>PlatformVersion</value>
-         <variableId>b5e5bdc4-352c-4a26-a9bd-945d3630fc1d</variableId>
+         <variableId>ed39d827-a5bd-4ddf-9282-644e8a4c41b6</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>d5ec4472-9597-447c-aff5-bb38c3fda72d</testDataLinkId>
+         <testDataLinkId>f544aec3-176a-4af6-b1dc-3fc68430caad</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>PlatformName</value>
-         <variableId>bdf8c988-5dc6-4818-a2c0-49df2d690b35</variableId>
+         <variableId>0e9d02b8-6aa1-4007-b32d-d6178f7b9a6c</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

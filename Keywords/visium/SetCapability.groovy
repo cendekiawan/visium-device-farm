@@ -58,6 +58,9 @@ public class SetCapability {
 		//		GlobalVariable.appID = lastText
 		//		println(GlobalVariable.appID)
 
+
+
+
 		DesiredCapabilities capabilities = new DesiredCapabilities()
 		String webDriverVisiumFarmHub = "https://farmdemo.visiumlabs.com/wd/hub"
 
@@ -69,8 +72,8 @@ public class SetCapability {
 		capabilities.setCapability(MobileCapabilityType.FULL_RESET, false)
 		capabilities.setCapability("vf:accessKey", "brian:3b7e2401-0e46-4efb-9a06-193c1086b797")
 
+
 		String os = PlatformName
-		println(os)
 
 
 		if(os.equals("Android")) {
@@ -101,18 +104,18 @@ public class SetCapability {
 	}
 
 
-	def static AppiumDriver getDriver() {
-		//		return AppiumDriverManager.getDriver()
-		try {
-			return AppiumDriverManager.getDriver()
-		}catch (StepFailedException e) {
-			KeywordUtil.logInfo(e.getMessage())
-			return null
-		}catch (Exception e) {
-			KeywordUtil.logInfo(e.getMessage())
-			return null
-		}
-	}
+	//	def static AppiumDriver getDriver() {
+	//		//		return AppiumDriverManager.getDriver()
+	//		try {
+	//			return AppiumDriverManager.getDriver()
+	//		}catch (StepFailedException e) {
+	//			KeywordUtil.logInfo(e.getMessage())
+	//			return null
+	//		}catch (Exception e) {
+	//			KeywordUtil.logInfo(e.getMessage())
+	//			return null
+	//		}
+	//	}
 
 
 	//	def static void resetApp() {
