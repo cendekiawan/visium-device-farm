@@ -25,16 +25,16 @@ import io.appium.java_client.MobileElement as MobileElement
 import java.net.URL as URL
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import io.appium.java_client.remote.MobileCapabilityType
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import visium.SetCapability
-import org.openqa.selenium.remote.DesiredCapabilities
-
+import shareStep.RegisterOrCalculatorScreen
 
 SetCapability.startApplication(DeviceName, UdId, PlatformVersion, PlatformName)
 
-Mobile.delay(5)
+'========================  Step 1  ========================'
+'''Step Description: Register Screen'''
+RegisterOrCalculatorScreen registerOrCalculatorScreen = new RegisterOrCalculatorScreen()
 
-Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Angka 8'), 10)
-
-Mobile.tap(findTestObject('Object Repository/iOS - iPhone 8/Angka 8'), 10)
+'Step: Add register Or Calculator screen'
+registerOrCalculatorScreen.add()

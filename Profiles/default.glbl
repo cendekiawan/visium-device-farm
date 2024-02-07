@@ -54,4 +54,9 @@
       <initValue>''</initValue>
       <name>Status_Test_Case</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>OS_Phone</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

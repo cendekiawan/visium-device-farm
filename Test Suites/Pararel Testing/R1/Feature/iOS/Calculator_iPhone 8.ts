@@ -12,13 +12,13 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>3fa79fda-0c04-46b0-b5b7-7a927a2763c5</testSuiteGuid>
    <testCaseLink>
-      <guid>a5f964eb-728b-4f75-9d9f-eabad53c8524</guid>
+      <guid>80df106f-b1e7-4d9a-90e0-543a3995797b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/iOS/DOFF-11217_Calculator</testCaseId>
+      <testCaseId>Test Cases/Android And iOS/DOFF-11217_Register Or Calculator</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>2569664b-ca30-4591-a62b-00d2262c1a52</id>
+         <id>33abacb5-c197-407b-8075-c3b5e787dea1</id>
          <iterationEntity>
             <iterationType>SPECIFIC</iterationType>
             <value>12</value>
@@ -27,28 +27,28 @@
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId>2569664b-ca30-4591-a62b-00d2262c1a52</testDataLinkId>
+         <testDataLinkId>33abacb5-c197-407b-8075-c3b5e787dea1</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>DeviceName</value>
-         <variableId>1933942f-2578-496b-8bdb-137869bf5d1c</variableId>
+         <variableId>9fb33da1-8c11-415f-93a7-6fd60d7af839</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>2569664b-ca30-4591-a62b-00d2262c1a52</testDataLinkId>
+         <testDataLinkId>33abacb5-c197-407b-8075-c3b5e787dea1</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>UdId</value>
-         <variableId>873099d2-d533-408f-ad92-7db0225373be</variableId>
+         <variableId>13bd77ca-65d8-462b-acc0-ff53b47baf71</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>2569664b-ca30-4591-a62b-00d2262c1a52</testDataLinkId>
+         <testDataLinkId>33abacb5-c197-407b-8075-c3b5e787dea1</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>PlatformVersion</value>
-         <variableId>b5e5bdc4-352c-4a26-a9bd-945d3630fc1d</variableId>
+         <variableId>ed39d827-a5bd-4ddf-9282-644e8a4c41b6</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>2569664b-ca30-4591-a62b-00d2262c1a52</testDataLinkId>
+         <testDataLinkId>33abacb5-c197-407b-8075-c3b5e787dea1</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>PlatformName</value>
-         <variableId>bdf8c988-5dc6-4818-a2c0-49df2d690b35</variableId>
+         <variableId>0e9d02b8-6aa1-4007-b32d-d6178f7b9a6c</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

@@ -72,9 +72,10 @@ class Hooks {
 			}
 		else if (testCaseContext.getTestCaseStatus()=="FAILED" || testCaseContext.getTestCaseStatus()=="ERROR") {
 				GlobalVariable.Zephyr_StatusName=2
-				String SS = Mobile.takeScreenshot("$GlobalVariable.Status_Test_Case-"+"$GlobalVariable.Device_Name"+".png")
+				String SS = Mobile.takeScreenshot("Screenshots/$GlobalVariable.Status_Test_Case-"+"$GlobalVariable.Device_Name"+".png")
 				GlobalVariable.G_attachment = SS
 				WS.sendRequest(findTestObject('Object Repository/Zephyr/Create_attachment'))
+				GlobalVariable.G_attachment = SS.substring(12)
 				WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Comment - Failed'))
 		}
 		WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Status'))
