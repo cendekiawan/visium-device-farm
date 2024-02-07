@@ -39,6 +39,7 @@ import stepDef.Helper
 import io.appium.java_client.AppiumDriver
 import internal.GlobalVariable as GlobalVariable
 import stepDef.BaseScreenObject
+import stepDef.Constants
 
 
 public class RegisterOrCalculatorScreen extends stepDef.BaseScreenObject {
@@ -55,7 +56,7 @@ public class RegisterOrCalculatorScreen extends stepDef.BaseScreenObject {
 
 	public RegisterOrCalculatorScreen() {
 
-		if(GlobalVariable.OS_Phone == "android") {
+		if(GlobalVariable.OS_Phone == Constants.ANDROID.toLowerCase()) {
 			btnAdd = createTestObjectByXpath("btnAdd", "//android.widget.TextView[@content-desc='Create new']")
 			txtInputName = createTestObjectByXpath("txtInputName", "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.EditText[1]")
 			txtInputPhone = createTestObjectByXpath("txtInputPhone", "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.EditText")
@@ -63,7 +64,7 @@ public class RegisterOrCalculatorScreen extends stepDef.BaseScreenObject {
 			txtInputEmail = createTestObjectByXpath("txtInputEmail", "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[3]/android.widget.EditText")
 			txtInputAlternateEmail = createTestObjectByXpath("txtInputAlternateEmail", "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[4]/android.widget.EditText")
 			btnSave = createTestObjectByXpath("btnSave", "//android.widget.TextView[@content-desc='Save']")
-		} else if(GlobalVariable.OS_Phone == "ios") {
+		} else if(GlobalVariable.OS_Phone == Constants.IOS.toLowerCase()) {
 			btn8 = createTestObjectByXpath("btn8", "//XCUIElementTypeButton[@name='8']")
 			btn2 = createTestObjectByXpath("btn8", "//XCUIElementTypeButton[@name='2']")
 		}
@@ -71,7 +72,7 @@ public class RegisterOrCalculatorScreen extends stepDef.BaseScreenObject {
 
 
 	def void add() {
-		if(GlobalVariable.OS_Phone == "android") {
+		if(GlobalVariable.OS_Phone == Constants.ANDROID.toLowerCase()) {
 			Helper.tap(btnAdd)
 			Helper.sendKeys(txtInputName, "Bank Mandiri Automation")
 			Helper.sendKeys(txtInputPhone, "0857623527283")
@@ -79,7 +80,7 @@ public class RegisterOrCalculatorScreen extends stepDef.BaseScreenObject {
 			Helper.sendKeys(txtInputEmail, "automation@bankmandiri.co.id")
 			Helper.sendKeys(txtInputAlternateEmail, "automation@bankmandiri.co.id")
 			Helper.tap(btnSave)
-		}else if(GlobalVariable.OS_Phone == "ios"){
+		}else if(GlobalVariable.OS_Phone == Constants.IOS.toLowerCase()){
 			Helper.tap(btn8)
 			Helper.tap(btn2)
 			Helper.tap(btn8)

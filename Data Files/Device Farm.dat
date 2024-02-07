@@ -9,24 +9,24 @@
    <dataFileGUID>f0910723-801c-4d94-8201-685722be15dc</dataFileGUID>
    <dataSourceUrl></dataSourceUrl>
    <driver>InternalData</driver>
-   <data>SM-A520F 52003cffeced945f 8.0.0 android Samsung+SM-A520F</data>
-   <data>SM-J610F 9321f298 8.1.0 android Samsung+%09SM-J610F</data>
-   <data>SM-A750F 320046d747f8b5c3 9 android SM-A750F</data>
-   <data>SM-G955F ce12160ca458b73003 9 android SM-G955F</data>
-   <data>MI+8+Lite a52bcc65 8.1.0 android MI+8+Lite</data>
-   <data>Mi+MIX+2 bbbb52ab 7.1.1 android Mi+MIX+2</data>
-   <data>VIA_F1 FYINQWLRLNCUIRBA 6.0 android Casper+VIA_F1+</data>
-   <data>LM-G710 LMG710EMd22afe89 9 android Lge+LM-G710+</data>
-   <data>SM-N770F R38MB01Y0EY 12 android Samsung+SM-N770F+</data>
-   <data>SM-N960F 266da0d03a017ece 10 android Samsung+SM-N960F+</data>
-   <data>SM-S918B R5CW91SY4LR 14 android Samsung+SM-S918B+</data>
-   <data>iPhone+8 52faf304d5147795cac1003572fb3b50d74ef5d4 15.0.2 ios iPhone+8</data>
-   <data>iPhone+XR 00008020-0014458A14BA002E 17.3 ios iPhone+XR</data>
-   <data>iPhone+15 00008120-000914192650A01E 17.1 ios iPhone+15</data>
-   <data>iPhone+6s ba17673a69babbfb4caf35daee88e2090a7215d8 15.7.3 ios iPhone+6s</data>
-   <data>iPhone+5s 2b9c4327ae1d7266c8c374ccdb20dcbf25e5859e 12.1.4 ios iPhone+5s</data>
-   <data>iPhone+8+Plus 4488f63b32e9e5bc1b42799eff3f2cbe0d01936c 15.4 ios %09iPhone+8+Plus</data>
-   <data>iPhone+6 9024a28917d38825b135091bcca878aec226a245 12.4.1 ios iPhone+6</data>
+   <data>SM-A520F 52003cffeced945f 8.0.0 Android Samsung+SM-A520F</data>
+   <data>SM-J610F 9321f298 8.1.0 Android Samsung+%09SM-J610F</data>
+   <data>SM-A750F 320046d747f8b5c3 9 Android SM-A750F</data>
+   <data>SM-G955F ce12160ca458b73003 9 Android SM-G955F</data>
+   <data>MI+8+Lite a52bcc65 8.1.0 Android MI+8+Lite</data>
+   <data>Mi+MIX+2 bbbb52ab 7.1.1 Android Mi+MIX+2</data>
+   <data>VIA_F1 FYINQWLRLNCUIRBA 6.0 Android Casper+VIA_F1+</data>
+   <data>LM-G710 LMG710EMd22afe89 9 Android Lge+LM-G710+</data>
+   <data>SM-N770F R38MB01Y0EY 12 Android Samsung+SM-N770F+</data>
+   <data>SM-N960F 266da0d03a017ece 10 Android Samsung+SM-N960F+</data>
+   <data>SM-S918B R5CW91SY4LR 14 Android Samsung+SM-S918B+</data>
+   <data>iPhone+8 52faf304d5147795cac1003572fb3b50d74ef5d4 15.0.2 iOS iPhone+8</data>
+   <data>iPhone+XR 00008020-0014458A14BA002E 17.3 iOS iPhone+XR</data>
+   <data>iPhone+15 00008120-000914192650A01E 17.1 iOS iPhone+15</data>
+   <data>iPhone+6s ba17673a69babbfb4caf35daee88e2090a7215d8 15.7.3 iOS iPhone+6s</data>
+   <data>iPhone+5s 2b9c4327ae1d7266c8c374ccdb20dcbf25e5859e 12.1.4 iOS iPhone+5s</data>
+   <data>iPhone+8+Plus 4488f63b32e9e5bc1b42799eff3f2cbe0d01936c 15.4 iOS %09iPhone+8+Plus</data>
+   <data>iPhone+6 9024a28917d38825b135091bcca878aec226a245 12.4.1 iOS iPhone+6</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
       <name>DeviceName</name>

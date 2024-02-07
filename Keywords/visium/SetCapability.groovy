@@ -67,7 +67,8 @@ public class SetCapability {
 		capabilities.setCapability(MobileCapabilityType.FULL_RESET, false)
 		capabilities.setCapability("vf:accessKey", "brian:3b7e2401-0e46-4efb-9a06-193c1086b797")
 
-		GlobalVariable.OS_Phone = PlatformName.toString()
+		GlobalVariable.OS_Phone = PlatformName.toString().toLowerCase()
+		println(GlobalVariable.OS_Phone)
 
 		if(GlobalVariable.OS_Phone == "android") {
 			capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2")
