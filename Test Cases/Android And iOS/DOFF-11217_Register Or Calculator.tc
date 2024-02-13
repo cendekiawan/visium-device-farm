@@ -16,50 +16,11 @@ Then the correct dialog message should be displayed</comment>
       <value></value>
       <variableId>9fb33da1-8c11-415f-93a7-6fd60d7af839</variableId>
    </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>13bd77ca-65d8-462b-acc0-ff53b47baf71</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>ed39d827-a5bd-4ddf-9282-644e8a4c41b6</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>0e9d02b8-6aa1-4007-b32d-d6178f7b9a6c</variableId>
-   </variableLinks>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>[('DeviceName') : '', ('UdId') : '', ('PlatformVersion') : '', ('PlatformName') : '']</defaultValue>
       <description></description>
       <id>9fb33da1-8c11-415f-93a7-6fd60d7af839</id>
-      <masked>false</masked>
-      <name>DeviceName</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>13bd77ca-65d8-462b-acc0-ff53b47baf71</id>
-      <masked>false</masked>
-      <name>UdId</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>ed39d827-a5bd-4ddf-9282-644e8a4c41b6</id>
-      <masked>false</masked>
-      <name>PlatformVersion</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>0e9d02b8-6aa1-4007-b32d-d6178f7b9a6c</id>
-      <masked>false</masked>
-      <name>PlatformName</name>
+      <masked>true</masked>
+      <name>Test</name>
    </variable>
 </TestCaseEntity>

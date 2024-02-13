@@ -20,8 +20,8 @@
          <combinationType>ONE</combinationType>
          <id>19b291de-25b0-4176-974d-93848da1871c</id>
          <iterationEntity>
-            <iterationType>SPECIFIC</iterationType>
-            <value>7</value>
+            <iterationType>RANGE</iterationType>
+            <value>7-8</value>
          </iterationEntity>
          <testDataId>Data Files/Device Farm</testDataId>
       </testDataLink>
@@ -31,24 +31,6 @@
          <type>DATA_COLUMN</type>
          <value>DeviceName</value>
          <variableId>9fb33da1-8c11-415f-93a7-6fd60d7af839</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>19b291de-25b0-4176-974d-93848da1871c</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>UdId</value>
-         <variableId>13bd77ca-65d8-462b-acc0-ff53b47baf71</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>19b291de-25b0-4176-974d-93848da1871c</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>PlatformVersion</value>
-         <variableId>ed39d827-a5bd-4ddf-9282-644e8a4c41b6</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>19b291de-25b0-4176-974d-93848da1871c</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>PlatformName</value>
-         <variableId>0e9d02b8-6aa1-4007-b32d-d6178f7b9a6c</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

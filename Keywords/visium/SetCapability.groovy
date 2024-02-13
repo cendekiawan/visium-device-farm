@@ -54,20 +54,24 @@ import com.kms.katalon.core.exception.StepFailedException
 
 public class SetCapability {
 
-	def static void startApplication(String DeviceName, String UdId, String PlatformVersion, String PlatformName){
+	def static void startApplication(Map mergeDataRow = null){
 
 		DesiredCapabilities capabilities = new DesiredCapabilities()
 		String webDriverVisiumFarmHub = "https://farmdemo.visiumlabs.com/wd/hub"
+		
+		String deviceName = mergeDataRow["DeviceName"].toString()
+		String udId = mergeDataRow["UdId"].toString()
+		String platformVersion = mergeDataRow["PlatformVersion"].toString()
 
-		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, DeviceName)
-		capabilities.setCapability(MobileCapabilityType.UDID, UdId)
-		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, PlatformVersion)
+		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, mergeDataRow[deviceName])
+		capabilities.setCapability(MobileCapabilityType.UDID, mergeDataRow[udId])
+		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, mergeDataRow[platformVersion])
 		//capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 180)
 		capabilities.setCapability(MobileCapabilityType.NO_RESET, true)
 		capabilities.setCapability(MobileCapabilityType.FULL_RESET, false)
 		capabilities.setCapability("vf:accessKey", "brian:3b7e2401-0e46-4efb-9a06-193c1086b797")
 
-		GlobalVariable.OS_Phone = PlatformName.toString().toLowerCase()
+		GlobalVariable.OS_Phone = platformVersion
 		println(GlobalVariable.OS_Phone)
 
 		if(GlobalVariable.OS_Phone == "android") {
