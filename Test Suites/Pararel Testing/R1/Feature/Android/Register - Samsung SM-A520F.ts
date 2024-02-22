@@ -30,7 +30,25 @@
          <testDataLinkId>40c69f7a-75ac-4cfc-8fc6-bf9a8fb8a804</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>DeviceName</value>
-         <variableId>9fb33da1-8c11-415f-93a7-6fd60d7af839</variableId>
+         <variableId>cbdc8434-c7ea-476a-aa10-9eceb97f1e55</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>40c69f7a-75ac-4cfc-8fc6-bf9a8fb8a804</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>UdId</value>
+         <variableId>e9ad741b-3e9a-4f16-b1ea-135301bc2d74</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>40c69f7a-75ac-4cfc-8fc6-bf9a8fb8a804</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>PlatformVersion</value>
+         <variableId>7061dc43-7e42-42bb-9486-4f567eb9b6fc</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>40c69f7a-75ac-4cfc-8fc6-bf9a8fb8a804</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>PlatformName</value>
+         <variableId>3a55db9b-bdfb-4d39-9764-50cf67306b61</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

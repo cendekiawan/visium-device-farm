@@ -72,7 +72,7 @@ public class RegisterOrCalculatorScreen extends stepDef.BaseScreenObject {
 
 
 	def void add() {
-		if(GlobalVariable.OS_Phone == Constants.ANDROID.toLowerCase()) {
+		if(GlobalVariable.OS_Phone == "android") {
 			Helper.tap(btnAdd)
 			Helper.sendKeys(txtInputName, "Bank Mandiri Automation")
 			Helper.sendKeys(txtInputPhone, "0857623527283")
@@ -80,7 +80,7 @@ public class RegisterOrCalculatorScreen extends stepDef.BaseScreenObject {
 			Helper.sendKeys(txtInputEmail, "automation@bankmandiri.co.id")
 			Helper.sendKeys(txtInputAlternateEmail, "automation@bankmandiri.co.id")
 			Helper.tap(btnSave)
-		}else if(GlobalVariable.OS_Phone == Constants.IOS.toLowerCase()){
+		}else if(GlobalVariable.OS_Phone == "ios"){
 			Helper.tap(btn8)
 			Helper.tap(btn2)
 			Helper.tap(btn8)

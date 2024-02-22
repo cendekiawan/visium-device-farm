@@ -14,13 +14,52 @@ Then the correct dialog message should be displayed</comment>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>9fb33da1-8c11-415f-93a7-6fd60d7af839</variableId>
+      <variableId>cbdc8434-c7ea-476a-aa10-9eceb97f1e55</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e9ad741b-3e9a-4f16-b1ea-135301bc2d74</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7061dc43-7e42-42bb-9486-4f567eb9b6fc</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3a55db9b-bdfb-4d39-9764-50cf67306b61</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>[('DeviceName') : '', ('UdId') : '', ('PlatformVersion') : '', ('PlatformName') : '']</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
-      <id>9fb33da1-8c11-415f-93a7-6fd60d7af839</id>
-      <masked>true</masked>
-      <name>Test</name>
+      <id>cbdc8434-c7ea-476a-aa10-9eceb97f1e55</id>
+      <masked>false</masked>
+      <name>DeviceName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e9ad741b-3e9a-4f16-b1ea-135301bc2d74</id>
+      <masked>false</masked>
+      <name>UdId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7061dc43-7e42-42bb-9486-4f567eb9b6fc</id>
+      <masked>false</masked>
+      <name>PlatformVersion</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3a55db9b-bdfb-4d39-9764-50cf67306b61</id>
+      <masked>false</masked>
+      <name>PlatformName</name>
    </variable>
 </TestCaseEntity>
