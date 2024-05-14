@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Register - Samsung SM-N960F</name>
+   <name>Casper</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -9,43 +9,43 @@
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
-   <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>b86d6915-2b3a-44f3-b18c-855f66929f2d</testSuiteGuid>
+   <rerunImmediately>false</rerunImmediately>
+   <testSuiteGuid>f49bc9b6-8be1-407f-9070-8961575089e1</testSuiteGuid>
    <testCaseLink>
-      <guid>c6496128-fd32-450c-abef-2b4e65812af9</guid>
+      <guid>92c32d09-eaed-4854-ac45-f60b1df8774f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Android And iOS/DOFF-16321_Register Or Calculator</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>f4b8b935-f544-4242-bb68-afb6f98dfabb</id>
+         <id>2f6f38f2-e8cf-4f2b-b80a-bbe4dfa9b599</id>
          <iterationEntity>
             <iterationType>SPECIFIC</iterationType>
-            <value>10</value>
+            <value>7</value>
          </iterationEntity>
          <testDataId>Data Files/Device Farm</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId>f4b8b935-f544-4242-bb68-afb6f98dfabb</testDataLinkId>
+         <testDataLinkId>2f6f38f2-e8cf-4f2b-b80a-bbe4dfa9b599</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>DeviceName</value>
          <variableId>cbdc8434-c7ea-476a-aa10-9eceb97f1e55</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>f4b8b935-f544-4242-bb68-afb6f98dfabb</testDataLinkId>
+         <testDataLinkId>2f6f38f2-e8cf-4f2b-b80a-bbe4dfa9b599</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>UdId</value>
          <variableId>e9ad741b-3e9a-4f16-b1ea-135301bc2d74</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>f4b8b935-f544-4242-bb68-afb6f98dfabb</testDataLinkId>
+         <testDataLinkId>2f6f38f2-e8cf-4f2b-b80a-bbe4dfa9b599</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>PlatformVersion</value>
          <variableId>7061dc43-7e42-42bb-9486-4f567eb9b6fc</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>f4b8b935-f544-4242-bb68-afb6f98dfabb</testDataLinkId>
+         <testDataLinkId>2f6f38f2-e8cf-4f2b-b80a-bbe4dfa9b599</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>PlatformName</value>
          <variableId>3a55db9b-bdfb-4d39-9764-50cf67306b61</variableId>

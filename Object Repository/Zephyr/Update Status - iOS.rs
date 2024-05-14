@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Get ID</name>
+   <name>Update Status - iOS</name>
    <tag></tag>
-   <elementGuidId>4dc18a74-9189-4768-ba73-8e83056dee39</elementGuidId>
+   <elementGuidId>d047119d-adeb-41aa-a7e3-aae0531a39c8</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
@@ -16,53 +16,57 @@
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
    <autoUpdateContent>false</autoUpdateContent>
-   <connectionTimeout>-1</connectionTimeout>
+   <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
-      <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>52e4c0be-7fea-4bf5-927a-28b413a1c620</webElementGuid>
-   </httpHeaderProperties>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n  \&quot;status\&quot; : \&quot;${GlobalVariable.Zephyr_StatusName}\&quot;\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer NzkwOTI3NDE5NTgyOj+lE78UR8Hm4ch73XP+Zaj9HtI5</value>
-      <webElementGuid>af61a98d-ed29-4d90-a477-f28aeb49082f</webElementGuid>
+      <webElementGuid>6c6c10e1-268b-414f-9a1b-9f9bd51259cd</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>6cecc637-13f4-42ed-8f3c-40330602b488</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.6.8</katalonVersion>
-   <maxResponseSize>-1</maxResponseSize>
+   <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${url}/rest/zapi/latest/traceability/executionsByTest?testIdOrKey=${issueKey}</restUrl>
+   <restRequestMethod>PUT</restRequestMethod>
+   <restUrl>${url}/rest/zapi/latest/execution/${id}/execute</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>-1</socketTimeout>
+   <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
-   <variables>
-      <defaultValue>GlobalVariable.Zephyr_TestCaseKey</defaultValue>
-      <description></description>
-      <id>2409373f-e909-4d46-8e4d-20ee566238b8</id>
-      <masked>false</masked>
-      <name>issueKey</name>
-   </variables>
    <variables>
       <defaultValue>GlobalVariable.Url_Zephyr</defaultValue>
       <description></description>
-      <id>9c7e08ad-be85-473c-ba38-3a337b23472e</id>
+      <id>3ff50734-a455-42fd-993e-f9212ca4ee6e</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.Zephyr_Id_iOS</defaultValue>
+      <description></description>
+      <id>3e3a8a14-555a-435d-8b1a-ad74330682b8</id>
+      <masked>false</masked>
+      <name>id</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

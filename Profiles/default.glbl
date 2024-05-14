@@ -59,4 +59,19 @@
       <initValue>''</initValue>
       <name>OS_Phone</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>Zephyr_Id_Android</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>Zephyr_Id_iOS</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>Test</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

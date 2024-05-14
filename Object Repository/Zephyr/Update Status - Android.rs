@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Update Status</name>
+   <name>Update Status - Android</name>
    <tag></tag>
    <elementGuidId>c21c9ce3-1220-4e2d-89fd-bdf1a8dc2ff1</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
@@ -62,7 +62,7 @@
       <name>url</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.Zephyr_Id</defaultValue>
+      <defaultValue>GlobalVariable.Zephyr_Id_Android</defaultValue>
       <description></description>
       <id>3e3a8a14-555a-435d-8b1a-ad74330682b8</id>
       <masked>false</masked>

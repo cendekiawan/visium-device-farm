@@ -65,7 +65,7 @@ public class RegisterOrCalculatorScreen extends stepDef.BaseScreenObject {
 			txtInputAlternateEmail = createTestObjectByXpath("txtInputAlternateEmail", "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[4]/android.widget.EditText")
 			btnSave = createTestObjectByXpath("btnSave", "//android.widget.TextView[@content-desc='Save']")
 		} else if(GlobalVariable.OS_Phone == Constants.IOS.toLowerCase()) {
-			btn8 = createTestObjectByXpath("btn8", "//XCUIElementTypeButton[@name='8']")
+			btn8 = createTestObjectByXpath("btn8", "//XCUIElementTypeButton[@name='><']")
 			btn2 = createTestObjectByXpath("btn8", "//XCUIElementTypeButton[@name='2']")
 		}
 	}

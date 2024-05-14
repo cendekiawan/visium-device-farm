@@ -34,6 +34,7 @@ import io.appium.java_client.AppiumDriver
 import io.appium.java_client.MobileElement
 import com.kms.katalon.core.appium.driver.AppiumDriverManager
 import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
+import org.openqa.selenium.remote.DesiredCapabilities
 
 
 class Hooks {
@@ -42,19 +43,18 @@ class Hooks {
 	def sampleBeforeTestCase(TestCaseContext testCaseContext) {
 		TestCase testCase = findTestCase(testCaseContext.getTestCaseId())
 		GlobalVariable.Zephyr_TestCaseKey=testCase.getName().split("_")[0]
-		println(GlobalVariable.Zephyr_TestCaseKey)
 		Object getId = WS.sendRequest(findTestObject('Object Repository/Zephyr/Get ID'))
+		
 		// Parse JSON
 		def jsonSlurper = new JsonSlurper()
 		def json = jsonSlurper.parseText(getId.getResponseText())
 		
 		// Extract ID from JSON
-		def executionId = json.executions[0].execution.id
+		def executionIdAndroid = json.executions[0].execution.id
+		def executionIdIos = json.executions[1].execution.id
 		
-		GlobalVariable.Zephyr_Id = executionId
-		println(GlobalVariable.Zephyr_Id)
-		
-		
+		GlobalVariable.Zephyr_Id_Android = executionIdAndroid
+		GlobalVariable.Zephyr_Id_iOS = executionIdIos
 	}
 	
 	
@@ -63,22 +63,38 @@ class Hooks {
 
 		//Set Zephyr Status
 		AppiumDriver<?> mobileDriver = MobileDriverFactory.getDriver()
-		GlobalVariable.Status_Test_Case = testCaseContext.getTestCaseStatus()
-		GlobalVariable.Device_Name = mobileDriver.getCapabilities().getCapability("appium:deviceName").toString()
-		println(GlobalVariable.Device_Name)
-		if (testCaseContext.getTestCaseStatus()=="PASSED") {
-				GlobalVariable.Zephyr_StatusName=1
-				WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Comment - Passed'))
+		String StatusTestCase = testCaseContext.getTestCaseStatus()
+		//GlobalVariable.Status_Test_Case = testCaseContext.getTestCaseStatus()
+		String os = mobileDriver.getCapabilities().getCapability("platformName").toString().toLowerCase()
+		if(os == "android") {
+			if (testCaseContext.getTestCaseStatus()=="PASSED") {
+					GlobalVariable.Zephyr_StatusName=1
+					WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Comment - Passed'))
+				}
+			else if (testCaseContext.getTestCaseStatus()=="FAILED" || testCaseContext.getTestCaseStatus()=="ERROR") {
+					GlobalVariable.Zephyr_StatusName=2
+					String SS = Mobile.takeScreenshot("Screenshots/$StatusTestCase-"+"$GlobalVariable.Device_Name"+".png")
+					GlobalVariable.G_attachment = SS
+					WS.sendRequest(findTestObject('Object Repository/Zephyr/Create_attachment'))
+					GlobalVariable.G_attachment = SS.substring(12)
+					WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Comment - Failed'))
 			}
-		else if (testCaseContext.getTestCaseStatus()=="FAILED" || testCaseContext.getTestCaseStatus()=="ERROR") {
-				GlobalVariable.Zephyr_StatusName=2
-				String SS = Mobile.takeScreenshot("Screenshots/$GlobalVariable.Status_Test_Case-"+"$GlobalVariable.Device_Name"+".png")
-				GlobalVariable.G_attachment = SS
-				WS.sendRequest(findTestObject('Object Repository/Zephyr/Create_attachment'))
-				GlobalVariable.G_attachment = SS.substring(12)
-				WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Comment - Failed'))
+				WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Status - Android'))
+		}else if(os == "ios"){
+				if (testCaseContext.getTestCaseStatus()=="PASSED") {
+					GlobalVariable.Zephyr_StatusName=1
+					WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Comment - Passed'))
+				}
+				else if (testCaseContext.getTestCaseStatus()=="FAILED" || testCaseContext.getTestCaseStatus()=="ERROR") {
+					GlobalVariable.Zephyr_StatusName=2
+					String SS = Mobile.takeScreenshot("Screenshots/$StatusTestCase-"+"$GlobalVariable.Device_Name"+".png")
+					GlobalVariable.G_attachment = SS
+					WS.sendRequest(findTestObject('Object Repository/Zephyr/Create_attachment'))
+					GlobalVariable.G_attachment = SS.substring(12)
+					WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Comment - Failed'))
+			}
+				WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Status - iOS'))
 		}
-		WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Status'))
 
 		AppiumDriverManager.closeDriver()
 	}

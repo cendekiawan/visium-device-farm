@@ -55,25 +55,23 @@ import com.kms.katalon.core.exception.StepFailedException
 public class SetCapability {
 
 	def static void startApplication(String DeviceName, String UdId, String PlatformVersion, String PlatformName){
-
 		DesiredCapabilities capabilities = new DesiredCapabilities()
 		String webDriverVisiumFarmHub = "https://farmdemo.visiumlabs.com/wd/hub"
 
 		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, DeviceName)
 		capabilities.setCapability(MobileCapabilityType.UDID, UdId)
 		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, PlatformVersion)
-		//capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 180)
+//		capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 180)
 		capabilities.setCapability(MobileCapabilityType.NO_RESET, true)
 		capabilities.setCapability(MobileCapabilityType.FULL_RESET, false)
 		capabilities.setCapability("vf:accessKey", "brian:3b7e2401-0e46-4efb-9a06-193c1086b797")
 
-		GlobalVariable.OS_Phone = PlatformName.toLowerCase().toString()
-		println(GlobalVariable.OS_Phone)
+		String os = PlatformName.toLowerCase().toString()
 
-		if(GlobalVariable.OS_Phone == "android") {
+		if(os == "android") {
 			capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2")
 			capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android")
-			//capabilities.setCapability("vf:appId", "${GlobalVariable.appID}")
+//			capabilities.setCapability("vf:appId", "${GlobalVariable.appID}")
 			capabilities.setCapability("appium:appPackage", "com.rimhimstudios.register")
 			capabilities.setCapability("appium:appActivity", "com.rimhimstudios.register.MainActivity")
 			capabilities.setCapability("vf:saveSession", true)
@@ -83,7 +81,7 @@ public class SetCapability {
 			capabilities.setCapability("vf:sessionName", "Android Automation Bank Mandiri")
 			KeywordUtil.logInfo("Success Remote")
 			AppiumDriverManager.createMobileDriver(MobileDriverType.ANDROID_DRIVER, capabilities, new URL(webDriverVisiumFarmHub))
-		}else if(GlobalVariable.OS_Phone == "ios") {
+		}else if(os == "ios") {
 			capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "xcuitest")
 			capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "iOS")
 			capabilities.setCapability("appium:bundleId", "com.apple.calculator")
@@ -95,5 +93,8 @@ public class SetCapability {
 			KeywordUtil.logInfo("Success Remote")
 			AppiumDriverManager.createMobileDriver(MobileDriverType.IOS_DRIVER, capabilities, new URL(webDriverVisiumFarmHub))
 		}
+		AppiumDriver<?> mobileDriver = MobileDriverFactory.getDriver()
+		GlobalVariable.OS_Phone = mobileDriver.getCapabilities().getCapability("platformName").toString().toLowerCase()
+		GlobalVariable.Device_Name = mobileDriver.getCapabilities().getCapability("deviceName").toString()
 	}
 }
