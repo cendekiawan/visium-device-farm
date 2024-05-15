@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportCollectionEntity>
+   <description></description>
+   <name>20240514_204151</name>
+   <tag></tag>
+   <displayName>20240514_204151</displayName>
+   <reportItemDescriptions>
+      <ReportItemDescription>
+         <reportLocation>Reports/20240514_204151/Pararel Testing/R1/Feature/Android/Register - Samsung SM-A520F/20240514_204152</reportLocation>
+         <runConfigDescription>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <requireConfigurationData>false</requireConfigurationData>
+            <runConfigurationData>
+               <entry>
+                  <key>remoteWebDriverType</key>
+                  <value>Selenium</value>
+               </entry>
+               <entry>
+                  <key>remoteWebDriverUrl</key>
+                  <value>https://farmdemo.visiumlabs.com/wd/hub</value>
+               </entry>
+            </runConfigurationData>
+            <runConfigurationId>Remote</runConfigurationId>
+         </runConfigDescription>
+         <testCaseAmount>0</testCaseAmount>
+      </ReportItemDescription>
+      <ReportItemDescription>
+         <reportLocation>Reports/20240514_204151/Pararel Testing/R1/Feature/Android/Register - Samsung SM-A750F/20240514_204154</reportLocation>
+         <runConfigDescription>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <requireConfigurationData>false</requireConfigurationData>
+            <runConfigurationData>
+               <entry>
+                  <key>remoteWebDriverType</key>
+                  <value>Selenium</value>
+               </entry>
+               <entry>
+                  <key>remoteWebDriverUrl</key>
+                  <value>https://farmdemo.visiumlabs.com/wd/hub</value>
+               </entry>
+            </runConfigurationData>
+            <runConfigurationId>Remote</runConfigurationId>
+         </runConfigDescription>
+         <testCaseAmount>0</testCaseAmount>
+      </ReportItemDescription>
+      <ReportItemDescription>
+         <reportLocation>Reports/20240514_204151/Pararel Testing/R1/Feature/Android/Register - Casper VIA_F1/20240514_204156</reportLocation>
+         <runConfigDescription>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <requireConfigurationData>false</requireConfigurationData>
+            <runConfigurationData>
+               <entry>
+                  <key>remoteWebDriverType</key>
+                  <value>Selenium</value>
+               </entry>
+               <entry>
+                  <key>remoteWebDriverUrl</key>
+                  <value>https://farmdemo.visiumlabs.com/wd/hub</value>
+               </entry>
+            </runConfigurationData>
+            <runConfigurationId>Remote</runConfigurationId>
+         </runConfigDescription>
+         <testCaseAmount>0</testCaseAmount>
+      </ReportItemDescription>
+   </reportItemDescriptions>
+   <testSuiteCollectionId>Test Suites/Pararel Testing/Device Farm - Pararel Testing</testSuiteCollectionId>
+</ReportCollectionEntity>

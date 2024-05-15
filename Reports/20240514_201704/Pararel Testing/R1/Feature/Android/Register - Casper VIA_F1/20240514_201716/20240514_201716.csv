@@ -1,0 +1,11 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Register - Casper VIA_F1,,,,2024-05-14 20:18:02,2024-05-14 20:19:15,1m - 12.638s,PASSED
+,,,,,,,
+Test Cases/Android And iOS/EVDEV-193415_Register Or Calculator,,"- An automation script to help user getting started with Mobile automation testing.
+- Script Content: Click ""START ALARM SERVICE"" and click ""STOP ALARM SERVICE"", verify alert show is correct",,2024-05-14 20:18:03,2024-05-14 20:19:15,1m - 12.124s,PASSED
+Start listener action : beforeTestCaseMultipleCategoryOs,,,,2024-05-14 20:18:03,2024-05-14 20:18:06,2.798s,ERROR
+"SetCapability.startApplication(DeviceName, UdId, PlatformVersion, PlatformName)",,,,2024-05-14 20:18:06,2024-05-14 20:18:25,18.822s,PASSED
+"""========================  Step 1  ========================""",,,,2024-05-14 20:18:25,2024-05-14 20:18:25,0.003s,PASSED
+registerOrCalculatorScreen = new shareStep.RegisterOrCalculatorScreen(),,Step Description: Register Screen,,2024-05-14 20:18:25,2024-05-14 20:18:25,0.034s,PASSED
+registerOrCalculatorScreen.add(),,Step: Add register Or Calculator screen,,2024-05-14 20:18:25,2024-05-14 20:19:12,47.340s,PASSED
+Start listener action : afterTestCaseMultipleCategoryOs,,,,2024-05-14 20:19:12,2024-05-14 20:19:15,2.706s,PASSED

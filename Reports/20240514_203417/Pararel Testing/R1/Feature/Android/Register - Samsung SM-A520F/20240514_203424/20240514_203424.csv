@@ -1,0 +1,11 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Register - Samsung SM-A520F,,,,2024-05-14 20:35:00,2024-05-14 20:36:13,1m - 13.899s,PASSED
+,,,,,,,
+Test Cases/Android And iOS/EVDEV-193415_Register Or Calculator,,"- An automation script to help user getting started with Mobile automation testing.
+- Script Content: Click ""START ALARM SERVICE"" and click ""STOP ALARM SERVICE"", verify alert show is correct",,2024-05-14 20:35:00,2024-05-14 20:36:13,1m - 13.426s,PASSED
+Start listener action : beforeTestCaseMultipleCategoryOs,,,,2024-05-14 20:35:00,2024-05-14 20:35:03,2.566s,ERROR
+"SetCapability.startApplication(DeviceName, UdId, PlatformVersion, PlatformName)",,,,2024-05-14 20:35:03,2024-05-14 20:35:20,16.492s,PASSED
+"""========================  Step 1  ========================""",,,,2024-05-14 20:35:20,2024-05-14 20:35:20,0.003s,PASSED
+registerOrCalculatorScreen = new shareStep.RegisterOrCalculatorScreen(),,Step Description: Register Screen,,2024-05-14 20:35:20,2024-05-14 20:35:20,0.037s,PASSED
+registerOrCalculatorScreen.add(),,Step: Add register Or Calculator screen,,2024-05-14 20:35:20,2024-05-14 20:36:12,52.136s,PASSED
+Start listener action : afterTestCaseMultipleCategoryOs,,,,2024-05-14 20:36:12,2024-05-14 20:36:13,1.764s,PASSED

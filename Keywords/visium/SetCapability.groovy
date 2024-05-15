@@ -61,7 +61,7 @@ public class SetCapability {
 		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, DeviceName)
 		capabilities.setCapability(MobileCapabilityType.UDID, UdId)
 		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, PlatformVersion)
-//		capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 180)
+		//		capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 180)
 		capabilities.setCapability(MobileCapabilityType.NO_RESET, true)
 		capabilities.setCapability(MobileCapabilityType.FULL_RESET, false)
 		capabilities.setCapability("vf:accessKey", "brian:3b7e2401-0e46-4efb-9a06-193c1086b797")
@@ -71,7 +71,7 @@ public class SetCapability {
 		if(os == "android") {
 			capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2")
 			capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android")
-//			capabilities.setCapability("vf:appId", "${GlobalVariable.appID}")
+			//			capabilities.setCapability("vf:appId", "${GlobalVariable.appID}")
 			capabilities.setCapability("appium:appPackage", "com.rimhimstudios.register")
 			capabilities.setCapability("appium:appActivity", "com.rimhimstudios.register.MainActivity")
 			capabilities.setCapability("vf:saveSession", true)

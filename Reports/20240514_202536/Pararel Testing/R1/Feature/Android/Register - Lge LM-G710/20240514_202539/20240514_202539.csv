@@ -1,0 +1,11 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Register - Lge LM-G710,,,,2024-05-14 20:26:01,2024-05-14 20:27:09,1m - 8.043s,PASSED
+,,,,,,,
+Test Cases/Android And iOS/EVDEV-193415_Register Or Calculator,,"- An automation script to help user getting started with Mobile automation testing.
+- Script Content: Click ""START ALARM SERVICE"" and click ""STOP ALARM SERVICE"", verify alert show is correct",,2024-05-14 20:26:01,2024-05-14 20:27:09,1m - 7.530s,PASSED
+Start listener action : beforeTestCaseMultipleCategoryOs,,,,2024-05-14 20:26:01,2024-05-14 20:26:04,2.757s,ERROR
+"SetCapability.startApplication(DeviceName, UdId, PlatformVersion, PlatformName)",,,,2024-05-14 20:26:04,2024-05-14 20:26:19,14.572s,PASSED
+"""========================  Step 1  ========================""",,,,2024-05-14 20:26:19,2024-05-14 20:26:19,0.003s,PASSED
+registerOrCalculatorScreen = new shareStep.RegisterOrCalculatorScreen(),,Step Description: Register Screen,,2024-05-14 20:26:19,2024-05-14 20:26:19,0.033s,PASSED
+registerOrCalculatorScreen.add(),,Step: Add register Or Calculator screen,,2024-05-14 20:26:19,2024-05-14 20:27:07,47.786s,PASSED
+Start listener action : afterTestCaseMultipleCategoryOs,,,,2024-05-14 20:27:07,2024-05-14 20:27:09,1.899s,PASSED

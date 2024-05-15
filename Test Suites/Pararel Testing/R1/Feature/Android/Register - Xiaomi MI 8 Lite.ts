@@ -15,7 +15,7 @@
       <guid>fea0553d-cc22-41db-be38-16d94dfbd477</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Android And iOS/DOFF-16321_Register Or Calculator</testCaseId>
+      <testCaseId>Test Cases/Android And iOS/EVDEV-193415_Register Or Calculator</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>e1480dd0-8305-406f-b511-d7f63c0c3b7a</id>

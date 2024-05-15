@@ -1,0 +1,11 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Calculator_iPhone 5s,,,,2024-05-14 20:29:22,2024-05-14 20:29:55,33.029s,FAILED
+,,,,,,,
+Test Cases/Android And iOS/EVDEV-193415_Register Or Calculator,,"- An automation script to help user getting started with Mobile automation testing.
+- Script Content: Click ""START ALARM SERVICE"" and click ""STOP ALARM SERVICE"", verify alert show is correct",,2024-05-14 20:29:22,2024-05-14 20:29:55,32.534s,FAILED
+Start listener action : beforeTestCaseMultipleCategoryOs,,,,2024-05-14 20:29:22,2024-05-14 20:29:25,2.845s,ERROR
+"SetCapability.startApplication(DeviceName, UdId, PlatformVersion, PlatformName)",,,,2024-05-14 20:29:25,2024-05-14 20:29:41,15.381s,PASSED
+"""========================  Step 1  ========================""",,,,2024-05-14 20:29:41,2024-05-14 20:29:41,0.004s,PASSED
+registerOrCalculatorScreen = new shareStep.RegisterOrCalculatorScreen(),,Step Description: Register Screen,,2024-05-14 20:29:41,2024-05-14 20:29:41,0.039s,PASSED
+registerOrCalculatorScreen.add(),,Step: Add register Or Calculator screen,,2024-05-14 20:29:41,2024-05-14 20:29:53,11.614s,FAILED
+Start listener action : afterTestCaseMultipleCategoryOs,,,,2024-05-14 20:29:53,2024-05-14 20:29:55,2.175s,PASSED

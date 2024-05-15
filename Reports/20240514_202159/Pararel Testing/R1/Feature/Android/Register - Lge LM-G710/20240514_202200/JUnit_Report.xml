@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Register - Lge LM-G710" time="63.41" tests="1" failures="0" errors="0">
+   <testsuite name="Register - Lge LM-G710" tests="1" failures="0" errors="0" time="63.41" skipped="0" timestamp="2024-05-14 20:22:13" hostname="ddl02 - 10.234.115.198" id="Test Suites/Pararel Testing/R1/Feature/Android/Register - Lge LM-G710">
+      <properties>
+         <property name="deviceName" value="LM-G710"/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/ddl02/Documents/latest_git/GitHub/visium-device-farm/Reports/20240514_202159/Pararel Testing/R1/Feature/Android/Register - Lge LM-G710/20240514_202200"/>
+         <property name="logFiles" value="/Users/ddl02/Documents/latest_git/GitHub/visium-device-farm/Reports/20240514_202159/Pararel Testing/R1/Feature/Android/Register - Lge LM-G710/20240514_202200/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="ddl02 - 10.234.115.198"/>
+         <property name="hostAddress" value="10.234.115.198"/>
+         <property name="remoteDriverUrl" value="https://farmdemo.visiumlabs.com/wd/hub"/>
+         <property name="desiredCapabilities" value="{
+  &quot;vf:accessKey&quot;: &quot;brian:3b7e2401-0e46-4efb-9a06-193c1086b797&quot;,
+  &quot;vf:sessionName&quot;: &quot;Android Automation Bank Mandiri&quot;,
+  &quot;noReset&quot;: true,
+  &quot;vf:saveSession&quot;: true,
+  &quot;deviceName&quot;: &quot;LM-G710&quot;,
+  &quot;fullReset&quot;: false,
+  &quot;vf:saveDeviceLog&quot;: true,
+  &quot;platformVersion&quot;: &quot;9&quot;,
+  &quot;vf:saveVideoRecord&quot;: true,
+  &quot;automationName&quot;: &quot;uiautomator2&quot;,
+  &quot;vf:saveAppiumLog&quot;: true,
+  &quot;appium:appActivity&quot;: &quot;com.rimhimstudios.register.MainActivity&quot;,
+  &quot;platformName&quot;: &quot;Android&quot;,
+  &quot;udid&quot;: &quot;LMG710EMd22afe89&quot;,
+  &quot;appium:appPackage&quot;: &quot;com.rimhimstudios.register&quot;
+}"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="8.6.5.208"/>
+      </properties>
+      <testcase name="Test Cases/Android And iOS/EVDEV-193415_Register Or Calculator" time="62.901" classname="Test Cases/Android And iOS/EVDEV-193415_Register Or Calculator" status="PASSED">
+         <system-out><![CDATA[2024-05-14 20:22:13 - [TEST_CASE][PASSED] - Test Cases/Android And iOS/EVDEV-193415_Register Or Calculator: Test Cases/Android And iOS/EVDEV-193415_Register Or Calculator
+
+2024-05-14 20:22:13 - [TEST_STEP][ERROR] - Start listener action : beforeTestCaseMultipleCategoryOs: groovy.lang.MissingPropertyException: No such property: ZEPHYR_ID_IOS_HIGH for class: Hooks
+	at Hooks.beforeTestCaseMultipleCategoryOs(Hooks.groovy:126)
+	at Hooks.invokeMethod(Hooks.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:268)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1715692920311.run(TempTestSuite1715692920311.groovy:36)
+
+
+2024-05-14 20:22:13 - [TEST_STEP][PASSED] - testCase = findTestCase(testCaseContext.getTestCaseId()): null
+
+2024-05-14 20:22:13 - [TEST_STEP][PASSED] - ZEPHYR_TEST_CASE_KEY = getName().split("_")[0]: null
+
+2024-05-14 20:22:14 - [TEST_STEP][PASSED] - getId = sendRequest(findTestObject("Object Repository/Zephyr/Get ID")): Send request successfully
+
+2024-05-14 20:22:16 - [MESSAGE][INFO] - HAR: /Users/ddl02/Documents/latest_git/GitHub/visium-device-farm/Reports/20240514_202159/Pararel Testing/R1/Feature/Android/Register - Lge LM-G710/20240514_202200/requests/main/0.har
+
+2024-05-14 20:22:16 - [MESSAGE][PASSED] - Send request successfully
+
+2024-05-14 20:22:16 - [TEST_STEP][PASSED] - jsonSlurper = new groovy.json.JsonSlurper(): null
+
+2024-05-14 20:22:16 - [TEST_STEP][PASSED] - json = jsonSlurper.parseText(getId.getResponseText()): null
+
+2024-05-14 20:22:16 - [TEST_STEP][PASSED] - executionIdIosHigh = id: null
+
+2024-05-14 20:22:16 - [TEST_STEP][PASSED] - executionIdIosMid = id: null
+
+2024-05-14 20:22:16 - [TEST_STEP][PASSED] - executionIdIosLow = id: null
+
+2024-05-14 20:22:16 - [TEST_STEP][PASSED] - executionIdAndroidHigh = id: null
+
+2024-05-14 20:22:16 - [TEST_STEP][PASSED] - executionIdAndroidMid = id: null
+
+2024-05-14 20:22:16 - [TEST_STEP][PASSED] - executionIdAndroidLow = id: null
+
+2024-05-14 20:22:16 - [TEST_STEP][PASSED] - ZEPHYR_ID_IOS_HIGH = executionIdIosHigh: null
+
+2024-05-14 20:22:16 - [TEST_STEP][PASSED] - ZEPHYR_ID_IOS_MID = executionIdIosMid: null
+
+2024-05-14 20:22:16 - [TEST_STEP][PASSED] - ZEPHYR_ID_IOS_LOW = executionIdIosLow: null
+
+2024-05-14 20:22:16 - [TEST_STEP][PASSED] - ZEPHYR_ID_ANDROID_HIGH = executionIdAndroidHigh: null
+
+2024-05-14 20:22:16 - [TEST_STEP][PASSED] - ZEPHYR_ID_ANDROID_MID = executionIdAndroidMid: null
+
+2024-05-14 20:22:16 - [TEST_STEP][PASSED] - ZEPHYR_ID_ANDROID_LOW = executionIdAndroidLow: null
+
+2024-05-14 20:22:16 - [TEST_STEP][ERROR] - println(ZEPHYR_ID_IOS_HIGH): groovy.lang.MissingPropertyException: No such property: ZEPHYR_ID_IOS_HIGH for class: Hooks
+	at Hooks.beforeTestCaseMultipleCategoryOs(Hooks.groovy:126)
+	at Hooks.invokeMethod(Hooks.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:268)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1715692920311.run(TempTestSuite1715692920311.groovy:36)
+
+
+2024-05-14 20:22:16 - [MESSAGE][ERROR] - groovy.lang.MissingPropertyException: No such property: ZEPHYR_ID_IOS_HIGH for class: Hooks
+	at Hooks.beforeTestCaseMultipleCategoryOs(Hooks.groovy:126)
+	at Hooks.invokeMethod(Hooks.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:268)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1715692920311.run(TempTestSuite1715692920311.groovy:36)
+
+
+2024-05-14 20:22:16 - [TEST_STEP][PASSED] - SetCapability.startApplication(DeviceName, UdId, PlatformVersion, PlatformName): Unable to get appium status. Root cause (null)
+
+2024-05-14 20:22:16 - [MESSAGE][INFO] - Success Remote
+
+2024-05-14 20:22:31 - [MESSAGE][WARNING] - Unable to get appium status. Root cause (null)
+
+2024-05-14 20:22:32 - [TEST_STEP][PASSED] - "========================  Step 1  ========================": null
+
+2024-05-14 20:22:32 - [TEST_STEP][PASSED] - registerOrCalculatorScreen = new shareStep.RegisterOrCalculatorScreen(): null
+
+2024-05-14 20:22:32 - [TEST_STEP][PASSED] - registerOrCalculatorScreen.add(): Tapped on element 'btnSave'
+
+2024-05-14 20:22:39 - [MESSAGE][PASSED] - Tapped on element 'btnAdd'
+
+2024-05-14 20:22:45 - [MESSAGE][PASSED] - Send keys 'Bank Mandiri Automation' on test object 'txtInputName' successfully.
+
+2024-05-14 20:22:51 - [MESSAGE][PASSED] - Send keys '0857623527283' on test object 'txtInputPhone' successfully.
+
+2024-05-14 20:22:57 - [MESSAGE][PASSED] - Send keys '0857623527283' on test object 'txtInputAlternatePhone' successfully.
+
+2024-05-14 20:23:03 - [MESSAGE][PASSED] - Send keys 'automation@bankmandiri.co.id' on test object 'txtInputEmail' successfully.
+
+2024-05-14 20:23:09 - [MESSAGE][PASSED] - Send keys 'automation@bankmandiri.co.id' on test object 'txtInputAlternateEmail' successfully.
+
+2024-05-14 20:23:14 - [MESSAGE][PASSED] - Tapped on element 'btnSave'
+
+2024-05-14 20:23:14 - [TEST_STEP][PASSED] - Start listener action : afterTestCaseMultipleCategoryOs: null
+
+2024-05-14 20:23:14 - [TEST_STEP][PASSED] - mobileDriver = getDriver(): null
+
+2024-05-14 20:23:14 - [TEST_STEP][PASSED] - os = toString().toLowerCase(): null
+
+2024-05-14 20:23:14 - [TEST_STEP][PASSED] - category = toString().toLowerCase(): null
+
+2024-05-14 20:23:14 - [TEST_STEP][PASSED] - if (os == "android"): Send request successfully
+
+2024-05-14 20:23:14 - [TEST_STEP][PASSED] - if (category == "casper via_f1" && "Android Low 2" && "Android Low 23"): null
+
+2024-05-14 20:23:14 - [TEST_STEP][PASSED] - if (category == "lge lm-g710" && "Android Mid 2" && "Android Mid 3"): null
+
+2024-05-14 20:23:14 - [TEST_STEP][PASSED] - if (category == "samsung sm-a520f" && "Android High 2" || "Android High 3"): Send request successfully
+
+2024-05-14 20:23:14 - [TEST_STEP][PASSED] - if (testCaseContext.getTestCaseStatus() == "PASSED"): null
+
+2024-05-14 20:23:14 - [TEST_STEP][PASSED] - ZEPHYR_STATUS_NAME = 1: null
+
+2024-05-14 20:23:14 - [TEST_STEP][PASSED] - sendRequest(findTestObject("Object Repository/Zephyr/Update Status - Android - High")): Send request successfully
+
+2024-05-14 20:23:15 - [MESSAGE][INFO] - HAR: /Users/ddl02/Documents/latest_git/GitHub/visium-device-farm/Reports/20240514_202159/Pararel Testing/R1/Feature/Android/Register - Lge LM-G710/20240514_202200/requests/main/1.har
+
+2024-05-14 20:23:15 - [MESSAGE][PASSED] - Send request successfully
+
+2024-05-14 20:23:15 - [TEST_STEP][PASSED] - closeDriver(): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2024-05-14 20:22:13 - [TEST_SUITE][PASSED] - Register - Lge LM-G710: Test Cases/Android And iOS/EVDEV-193415_Register Or Calculator]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

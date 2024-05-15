@@ -51,18 +51,18 @@
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>GlobalVariable.Zephyr_TestCaseKey</defaultValue>
-      <description></description>
-      <id>2409373f-e909-4d46-8e4d-20ee566238b8</id>
-      <masked>false</masked>
-      <name>issueKey</name>
-   </variables>
-   <variables>
-      <defaultValue>GlobalVariable.Url_Zephyr</defaultValue>
+      <defaultValue>GlobalVariable.ZEPHYR_URL</defaultValue>
       <description></description>
       <id>9c7e08ad-be85-473c-ba38-3a337b23472e</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.ZEPHYR_TEST_CASE_KEY</defaultValue>
+      <description></description>
+      <id>2409373f-e909-4d46-8e4d-20ee566238b8</id>
+      <masked>false</masked>
+      <name>issueKey</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

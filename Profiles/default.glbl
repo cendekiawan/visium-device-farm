@@ -74,4 +74,49 @@
       <initValue>''</initValue>
       <name>Test</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://10.243.236.111:8443'</initValue>
+      <name>ZEPHYR_URL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>ZEPHYR_TEST_CASE_KEY</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>ZEPHYR_ID_ANDROID_LOW</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>ZEPHYR_ID_ANDROID_MID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>ZEPHYR_ID_ANDROID_HIGH</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>ZEPHYR_ID_IOS_LOW</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>ZEPHYR_ID_IOS_MID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>ZEPHYR_ID_IOS_HIGH</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>ZEPHYR_STATUS_NAME</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
