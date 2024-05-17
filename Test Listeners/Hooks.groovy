@@ -105,10 +105,11 @@ class Hooks {
 		//GlobalVariable.ZEPHYR_TEST_CASE_KEY=testCase.getName().split("_")[0]
 		GlobalVariable.ZEPHYR_TEST_CASE_KEY=testCase.getTag()
 		System.out.println(GlobalVariable.ZEPHYR_TEST_CASE_KEY)
-//		Object getId = WS.sendRequest(findTestObject('Object Repository/Zephyr/Get ID'))
-//		def testCycleName = "Test Cycle"
-		def testCycleName = GlobalVariable.testCycleName
-		println(testCycleName)
+		Object getId = WS.sendRequest(findTestObject('Object Repository/Zephyr/Get ID'))
+		def testCycleName = "Test Cycle"
+//		def testCycleName = GlobalVariable.ZEPHYR_TEST_CYCLE_NAME
+//		println(testCycleName)
+		
 		def executionIdIosHighName = "iOS [High]"
 		def executionIdIosMidName = "iOS [Mid]"
 		def executionIdIosLowName = "iOS [Low]"
@@ -116,59 +117,61 @@ class Hooks {
 		def executionIdAndroidMidName = "Android [Mid]"
 		def executionIdAndroidLowName = "Android [Low]"
 		
+				
 		// Parse JSON
-//		def jsonSlurper = new JsonSlurper()
-//		def json = jsonSlurper.parseText(getId.getResponseText())
+		def jsonSlurper = new JsonSlurper()
+		def json = jsonSlurper.parseText(getId.getResponseText())
 		
-//		def executionIdIosHigh
-//		def executionIdIosMid
-//		def executionIdIosLow
-//		def executionIdAndroidHigh
-//		def executionIdAndroidMid
-//		def executionIdAndroidLow
-//		
-//		for (int i=0; i<json.executions.length; i++) {
-//			def a = json.executions[i].execution
-//			def executionName = a.folderName.split(" - ")[1]
-//			if(a.testCycle == testCycleName) {
-//				switch (executionName) {
-//					case (executionIdIosHighName):
-//						executionIdIosHigh = a.id
-//						break
-//					case (executionIdIosMidName):
-//						executionIdIosMid = a.id
-//						break
-//					case (executionIdIosLowName):
-//						executionIdIosLow = a.id
-//						break
-//					case (executionIdAndroidHighName):
-//						executionIdAndroidHigh = a.id
-//						break
-//					case (executionIdAndroidMidName):
-//						executionIdAndroidMid = a.id
-//						break
-//					case (executionIdAndroidLowName):
-//						executionIdAndroidLow = a.id
-//						break
-//				}
-//					
-//			} 
-//		}
-//		
-//		
-//		GlobalVariable.ZEPHYR_ID_IOS_HIGH = executionIdIosHigh
-//		GlobalVariable.ZEPHYR_ID_IOS_MID = executionIdIosMid
-//		GlobalVariable.ZEPHYR_ID_IOS_LOW = executionIdIosLow
-//		GlobalVariable.ZEPHYR_ID_ANDROID_HIGH = executionIdAndroidHigh
-//		GlobalVariable.ZEPHYR_ID_ANDROID_MID = executionIdAndroidMid
-//		GlobalVariable.ZEPHYR_ID_ANDROID_LOW = executionIdAndroidLow
-//		System.out.println(GlobalVariable.ZEPHYR_ID_IOS_HIGH)
-//		System.out.println(GlobalVariable.ZEPHYR_ID_IOS_MID)
-//		System.out.println(GlobalVariable.ZEPHYR_ID_IOS_LOW)
-//		System.out.println(GlobalVariable.ZEPHYR_ID_ANDROID_HIGH)
-//		System.out.println(GlobalVariable.ZEPHYR_ID_ANDROID_MID)
-//		System.out.println(GlobalVariable.ZEPHYR_ID_ANDROID_LOW)
-//		
+		println(json.executions.size())
+		def executionIdIosHigh
+		def executionIdIosMid
+		def executionIdIosLow
+		def executionIdAndroidHigh
+		def executionIdAndroidMid
+		def executionIdAndroidLow
+
+		for (int i=0; i<json.executions.size(); i++) {
+			def a = json.executions[i].execution
+			def executionName = a.folderName.split(" - ")[1]
+			if(a.testCycle == testCycleName) {
+				switch (executionName) {
+					case (executionIdIosHighName):
+						executionIdIosHigh = a.id
+						break
+					case (executionIdIosMidName):
+						executionIdIosMid = a.id
+						break
+					case (executionIdIosLowName):
+						executionIdIosLow = a.id
+						break
+					case (executionIdAndroidHighName):
+						executionIdAndroidHigh = a.id
+						break
+					case (executionIdAndroidMidName):
+						executionIdAndroidMid = a.id
+						break
+					case (executionIdAndroidLowName):
+						executionIdAndroidLow = a.id
+						break
+				}
+					
+			} 
+		}
+
+		
+		GlobalVariable.ZEPHYR_ID_IOS_HIGH = executionIdIosHigh
+		GlobalVariable.ZEPHYR_ID_IOS_MID = executionIdIosMid
+		GlobalVariable.ZEPHYR_ID_IOS_LOW = executionIdIosLow
+		GlobalVariable.ZEPHYR_ID_ANDROID_HIGH = executionIdAndroidHigh
+		GlobalVariable.ZEPHYR_ID_ANDROID_MID = executionIdAndroidMid
+		GlobalVariable.ZEPHYR_ID_ANDROID_LOW = executionIdAndroidLow
+		System.out.println(GlobalVariable.ZEPHYR_ID_IOS_HIGH)
+		System.out.println(GlobalVariable.ZEPHYR_ID_IOS_MID)
+		System.out.println(GlobalVariable.ZEPHYR_ID_IOS_LOW)
+		System.out.println(GlobalVariable.ZEPHYR_ID_ANDROID_HIGH)
+		System.out.println(GlobalVariable.ZEPHYR_ID_ANDROID_MID)
+		System.out.println(GlobalVariable.ZEPHYR_ID_ANDROID_LOW)
+	
 	}
 	
 	@AfterTestCase
@@ -178,10 +181,12 @@ class Hooks {
 		AppiumDriver<?> mobileDriver = MobileDriverFactory.getDriver()
 		String os = mobileDriver.getCapabilities().getCapability("platformName").toString().toLowerCase()
 		String category = mobileDriver.getCapabilities().getCapability("deviceName").toString().toLowerCase()
+		println(os)
+		println(category)
 		if(os == "android") {
 			
-			//Category Android Low
-			if(category == "via_f1") {
+			//Category Android Low = Visium Device ID
+			if(category == "fyinqwlrlncuirba" || "" || "") {
 				if (testCaseContext.getTestCaseStatus()=="PASSED") {
 					GlobalVariable.ZEPHYR_STATUS_NAME=1
 				}
@@ -191,8 +196,8 @@ class Hooks {
 				WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Status - Android - Low'))
 			}
 			
-			//Category Android Mid
-			if(category == "sm-a750f") {
+			//Category Android Mid = Visium Device ID
+			if(category == "lmg710emd22afe89" || "" || "") {
 				if (testCaseContext.getTestCaseStatus()=="PASSED") {
 					GlobalVariable.ZEPHYR_STATUS_NAME=1
 				}
@@ -202,8 +207,8 @@ class Hooks {
 				WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Status - Android - Mid'))
 			}
 			
-			//Category Android High
-			if(category == "sm-a520f") {
+			//Category Android High = Visium Device ID
+			if(category == "320046d747f8b5c3" || "" || "") {
 				if (testCaseContext.getTestCaseStatus()=="PASSED") {
 					GlobalVariable.ZEPHYR_STATUS_NAME=1
 				}
@@ -215,8 +220,8 @@ class Hooks {
 				
 		}else if(os == "ios"){
 			
-			//Category iOS Low
-			if(category == "iphone 5s" && "iphone 8 plus") {
+			//Category iOS Low = Visium Model
+			if(category == "iphone 5s" || "iphone 8 plus") {
 				if (testCaseContext.getTestCaseStatus()=="PASSED") {
 					GlobalVariable.ZEPHYR_STATUS_NAME=1
 				}
@@ -226,8 +231,8 @@ class Hooks {
 				WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Status - IOS - Low'))
 			}
 			
-			//Category iOS Mid
-			if(category == "iphone 8" && "iphone xr") {
+			//Category iOS Mid = Visium Model
+			if(category == "iphone xr" || "") {
 				if (testCaseContext.getTestCaseStatus()=="PASSED") {
 					GlobalVariable.ZEPHYR_STATUS_NAME=1
 				}
@@ -237,8 +242,8 @@ class Hooks {
 				WS.sendRequest(findTestObject('Object Repository/Zephyr/Update Status - IOS - Mid'))
 			}
 			
-			//Category iOS High
-			if(category == "iphone 15" && "iphone xr") {
+			//Category iOS High = Visium Model
+			if(category == "iphone 15" || "") {
 				if (testCaseContext.getTestCaseStatus()=="PASSED") {
 					GlobalVariable.ZEPHYR_STATUS_NAME=1
 				}

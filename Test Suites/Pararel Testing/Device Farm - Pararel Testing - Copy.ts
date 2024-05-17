@@ -25,7 +25,7 @@
             <runConfigurationId>Remote</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Pararel Testing/R1/Feature/Android/Register - Casper VIA_F1</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Pararel Testing/R1/Feature/Android/Register - Samsung SM-A750F</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>

@@ -24,7 +24,7 @@
             </runConfigurationData>
             <runConfigurationId>Remote</runConfigurationId>
          </configuration>
-         <runEnabled>false</runEnabled>
+         <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Pararel Testing/R1/Feature/iOS/Calculator_iPhone 15</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
@@ -44,8 +44,8 @@
             </runConfigurationData>
             <runConfigurationId>Remote</runConfigurationId>
          </configuration>
-         <runEnabled>false</runEnabled>
-         <testSuiteEntity>Test Suites/Pararel Testing/R1/Feature/iOS/Calculator_iPhone 8</testSuiteEntity>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Pararel Testing/R1/Feature/iOS/Calculator_iPhone XR</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -64,7 +64,7 @@
             </runConfigurationData>
             <runConfigurationId>Remote</runConfigurationId>
          </configuration>
-         <runEnabled>false</runEnabled>
+         <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Pararel Testing/R1/Feature/iOS/Calculator_iPhone 5s</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
@@ -85,7 +85,7 @@
             <runConfigurationId>Remote</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Pararel Testing/R1/Feature/Android/Register - Samsung SM-A520F</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Pararel Testing/R1/Feature/Android/Register - Samsung SM-A750F</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -105,7 +105,7 @@
             <runConfigurationId>Remote</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Pararel Testing/R1/Feature/Android/Register - Samsung SM-A750F</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Pararel Testing/R1/Feature/Android/Register - Lge LM-G710</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>

@@ -71,7 +71,7 @@ public class SetCapability {
 		if(os == "android") {
 			capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2")
 			capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android")
-			//			capabilities.setCapability("vf:appId", "${GlobalVariable.testCycleNameppID}")
+			//			capabilities.setCapability("vf:appId", "${GlobalVariable.ZEPHYR_TEST_CYCLE_NAMEppID}")
 			capabilities.setCapability("appium:appPackage", "com.rimhimstudios.register")
 			capabilities.setCapability("appium:appActivity", "com.rimhimstudios.register.MainActivity")
 			capabilities.setCapability("vf:saveSession", true)

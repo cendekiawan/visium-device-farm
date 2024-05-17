@@ -20,7 +20,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;body\&quot;: \&quot;*AUTOMATION* - ${GlobalVariable.Device_Name} -  {color:red}*${GlobalVariable.Status_Test_Case}*{color}!${GlobalVariable.G_attachment}|thumbnail!\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;body\&quot;: \&quot;*AUTOMATION* - ${GlobalVariable.Device_Name} -  {color:red}*FAILED*{color}!${GlobalVariable.G_attachment}|thumbnail!\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -63,14 +63,14 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>GlobalVariable.Url_Zephyr</defaultValue>
+      <defaultValue>GlobalVariable.ZEPHYR_URL</defaultValue>
       <description></description>
       <id>98756704-f73e-4223-a1c3-e87013c92b80</id>
       <masked>false</masked>
       <name>url</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.Zephyr_TestCaseKey</defaultValue>
+      <defaultValue>GlobalVariable.ZEPHYR_TEST_CASE_KEY</defaultValue>
       <description></description>
       <id>2409373f-e909-4d46-8e4d-20ee566238b8</id>
       <masked>false</masked>
