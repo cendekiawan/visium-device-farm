@@ -2,8 +2,8 @@
 <TestCaseEntity>
    <description>- An automation script to help user getting started with Mobile automation testing.
 - Script Content: Click &quot;START ALARM SERVICE&quot; and click &quot;STOP ALARM SERVICE&quot;, verify alert show is correct</description>
-   <name>EVDEV-193415_Register Or Calculator</name>
-   <tag></tag>
+   <name>Register Or Calculator</name>
+   <tag>EVDEV-193415</tag>
    <comment>Story: Verify correct alarm message
 Given that user has started an application
 And he navigates the application to Activity form

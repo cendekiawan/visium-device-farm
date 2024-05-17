@@ -81,7 +81,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
+      <initValue>'EVDEV-193415'</initValue>
       <name>ZEPHYR_TEST_CASE_KEY</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -118,5 +118,10 @@
       <description></description>
       <initValue>''</initValue>
       <name>ZEPHYR_STATUS_NAME</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>testCycleName</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

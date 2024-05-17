@@ -74,7 +74,7 @@ public class RegisterOrCalculatorScreen extends stepDef.BaseScreenObject {
 	def void add() {
 		if(GlobalVariable.OS_Phone == "android") {
 			Helper.tap(btnAdd)
-			Helper.sendKeys(txtInputName, "Bank Mandiri Automation")
+			Helper.sendKeys(txtInputName, GlobalVariable.testCycleName)
 			Helper.sendKeys(txtInputPhone, "0857623527283")
 			Helper.sendKeys(txtInputAlternatePhone, "0857623527283")
 			Helper.sendKeys(txtInputEmail, "automation@bankmandiri.co.id")
