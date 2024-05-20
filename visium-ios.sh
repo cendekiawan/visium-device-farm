@@ -25,7 +25,7 @@ fi
 # Make the GET request and capture the JSON response
 response=$(curl -s -X GET https://farmdemo.visiumlabs.com/api/devices?os=iOS \
 -H "Content-Type: application/json" \
--H "X-VisiumFarm-Api-Key: 2q3Ue23QgD.Xj0TMbjEpzr2Zf6PfngagnetePGiOjubCr6aUwN0")
+-H "X-VisiumFarm-Api-Key: 2W8ttKCjUz.TbJ9PrpJq0URYB9R7LFcHTdcBXeZbmiFzOyz81er")
 
 # Extract the 'id' attributes from the JSON response and format output with double quotes
 ids=$(echo "$response" | jq -r '[.[] | .deviceId] | map("\"" + . + "\"") | join(",")')
@@ -39,7 +39,7 @@ export ids=$ids
 
 # step 3: upload IPA file and get the id of IPA file
 # Set the necessary variables
-API_KEY="2q3Ue23QgD.Xj0TMbjEpzr2Zf6PfngagnetePGiOjubCr6aUwN0"
+API_KEY="2W8ttKCjUz.TbJ9PrpJq0URYB9R7LFcHTdcBXeZbmiFzOyz81er"
 FILE_PATH="testingVisium.ipa"
 API_URL="https://farmdemo.visiumlabs.com/api/v1/apps"
 
@@ -61,7 +61,7 @@ export appId=$appId
 # step 4: Install the IPA in all iOS devices
 curl -X POST https://farmdemo.visiumlabs.com/api/apk/install \
 -H "Content-Type: application/json" \
--H "X-VisiumFarm-Api-Key: 2q3Ue23QgD.Xj0TMbjEpzr2Zf6PfngagnetePGiOjubCr6aUwN0" \
+-H "X-VisiumFarm-Api-Key: 2W8ttKCjUz.TbJ9PrpJq0URYB9R7LFcHTdcBXeZbmiFzOyz81er" \
 -d '{
   "appList": [
     {
