@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteCollectionEntity>
    <description></description>
-   <name>Device Farm - Pararel Testing - R2</name>
+   <name>Device Farm - Parallel Testing - R1</name>
    <tag></tag>
    <delayBetweenInstances>5</delayBetweenInstances>
    <executionMode>PARALLEL</executionMode>
@@ -25,7 +25,7 @@
             <runConfigurationId>Remote</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Pararel Testing/R1/Feature/iOS/Calculator_iPhone 5s</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Pararel Testing/R1/Feature/iOS/Calculator_iPhone 15</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -45,7 +45,7 @@
             <runConfigurationId>Remote</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Pararel Testing/R1/Feature/Android/Register - Samsung SM-A750F</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Pararel Testing/R1/Feature/iOS/Calculator_iPhone XR</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>
